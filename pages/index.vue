@@ -1,40 +1,7 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        cvl-cosite-v2
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-        href="https://nuxtjs.org/"
-        target="_blank"
-        class="button--green">Documentation</a>
-        <a
-        href="https://github.com/nuxt/nuxt.js"
-        target="_blank"
-        class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <div id="home">
 
-    <!-- <div class="form-group">
-      <label for="form_title">タイトル</label>
-      <input type="text" name="app[title]" class="form-control"
-      v-model="app.title"
-      data-vv-as="タイトル"
-      v-validate="'required|max:5'"
-      :class="{'input': true, 'form-danger':
-      errors.has('app[title]') }"
-      />
-      <div class="form-control-feedback" v-show="errors.has('app[title]')">
-        <p class="alert alert-danger">{{ errors.first('app[title]') }}</p>
-      </div>
-    </div> -->
-
-  </section>
+  </div>
 </template>
 
 <script>
