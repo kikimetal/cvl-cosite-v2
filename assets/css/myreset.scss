@@ -1,0 +1,60 @@
+/* myreset */
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 1px; /* rem基準値 */
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  background: #fff;
+  color: #333;
+
+  line-height: 1;
+  vertical-align: baseline;
+  font-family:
+    'Noto Sans Japanese', /* https://googlefonts.github.io/japanese/#notosansjapanese */
+    'Helvetica Neue', /* Macの欧文 (OS X 10.10以前) */
+    'Segoe UI',       /* Windowsの欧文 */
+    YuGothicM,        /* Windows8.1以上は游ゴシック */
+    YuGothic,         /* Macの游ゴシック */
+    Meiryo,           /* 游ゴシックが入っていないWindows */
+    sans-serif;
+}
+body{
+  font-size: 16rem;
+  * {
+    overflow: hidden;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  span, p, a, h1, h2, h3, h4, h5, h6{
+    overflow: visible;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+div, p, section, article, aside{
+  display: block;
+}
+
+strong, b{
+  font-weight: bold;
+}
+
+ul, ol{
+  list-style: none;
+}
