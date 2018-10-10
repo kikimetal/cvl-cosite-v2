@@ -29,25 +29,6 @@ export default{
   }
 }
 
-
-section{ // TODO: remove
-  font-size: 60px;
-  width: 100%;
-  height: 186vw;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  @include futura;
-  color: $white;
-  @include md {
-    height: 58vw;
-  }
-  @include lg {
-    height: 52vw;
-  }
-}
-
 [data-scroll] {
   transition: all 1s ease;
 }

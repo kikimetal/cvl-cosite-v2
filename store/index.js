@@ -9,10 +9,10 @@ const store = () => new Vuex.Store({
     // test: () => {console.log($nuxt.$route.path)},
     getHead: () => heads[$nuxt.$route.path],
     so: () => ScrollOut({
-        cssProps: {
-          viewportY: true,
-          visibleY: true
-        }
+        // cssProps: {
+        //   viewportY: true,
+        //   visibleY: true
+        // }
       })
   },
   mutations: {
