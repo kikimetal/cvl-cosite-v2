@@ -45,6 +45,8 @@ module.exports = {
     },
   },
 
+  plugins: [{ src: '~/plugins/routerOption.js', ssr: false }],
+
   css: [
     'assets/css/myreset.scss',
   ],

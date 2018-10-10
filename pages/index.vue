@@ -30,18 +30,15 @@
         </section>
 
       </router-link>
-  </div>
+    </div>
   </div>
 </template>
 
 <script>
-import ScrollOut from "scroll-out"
-
 export default {
   components: {},
-  mounted () {
-    ScrollOut()
-  },
+  mounted () { this.$store.state.so() },
+  head () { return this.$store.state.getHead() },
 }
 </script>
 

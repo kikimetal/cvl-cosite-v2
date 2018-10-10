@@ -35,12 +35,9 @@
 </template>
 
 <script>
-import ScrollOut from "scroll-out"
-
 export default {
-  mounted () {
-    ScrollOut()
-  },
+  mounted () { this.$store.state.so() },
+  head () { return this.$store.state.getHead() },
 }
 </script>
 
