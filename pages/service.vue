@@ -1,7 +1,7 @@
 <template>
   <div class="page">
-    <div id="home">
-      <router-link to="/service">
+    <div id="service">
+      <router-link to="/">
         <section>
           HELOOO<br>
           HELOOO<br>
@@ -19,27 +19,28 @@
         <section>
         </section>
       </router-link>
-  </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'home',
+  name: 'service',
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
 .page{
-  background: pale($skyblue);
+  background: pale($pink);
 }
-#home{
+#service{
+  overflow: hidden;
   section{
     width: 100%;
     height: 500px;
     height: 184vw;
-    font-size: 100px;
+    font-size: 120px;
     @include md {
       height: 58vw;
     }
@@ -49,7 +50,7 @@ export default {
   }
 
   section:nth-of-type(1){
-    background: #2294E3;
+    background: #d6bec9;
   }
   section:nth-of-type(2){
     background: #E45B5B;

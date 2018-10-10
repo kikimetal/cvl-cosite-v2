@@ -1,0 +1,37 @@
+// breakpoint
+@mixin md {
+  @media (min-width: (768px)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: (1240px)) {
+    @content;
+  }
+}
+
+// font
+@mixin futura {
+  font-family: "futura-pt-bold", serif;
+  font-weight: 900;
+}
+
+// color
+$skyblue: #00C5FF;
+$blue: #2294E3;
+$pink: #FE9DA0;
+$red: #E45B5B;
+$white: #fafafa;
+$grey-1: #E9E8EB;
+$grey-5: #757575;
+
+@function pale($color) {
+  @return lighten(desaturate($color, 9%), 6%);
+}
+@function dark($color) {
+  @return darken(desaturate($color, 20%), 15%);
+}
+
+// easing
+$ease-out: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-out-back: cubic-bezier(0,1.49,.55,1.3);

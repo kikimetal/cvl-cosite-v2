@@ -3,16 +3,19 @@ module.exports = {
   ** Headers of the page
   */
   mode: 'spa',
-  
+
   head: {
     title: 'cvl-cosite-v2',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
+      { hid: 'description', name: 'description', content: 'こんにちは。カーバンクルです。。。' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://use.typekit.net/ozu0idc.css' },
     ]
   },
   /*
@@ -40,22 +43,12 @@ module.exports = {
         })
       }
     },
-    /**
-    * add 2018.8.9. kikimetal
-    * IE11 のためのポリフィル
-    */
-    // babel: {
-    //   presets: [
-    //     [
-    //       'vue-app',
-    //       {
-    //         targets:  { ie: 11 },
-    //         useBuiltIns: true
-    //       }
-    //     ]
-    //   ]
-    // },
   },
+
+  // transition: {
+  //   name: 'page',
+  //   mode: 'in-out',
+  // },
 
   css: [
     'assets/css/myreset.scss',
