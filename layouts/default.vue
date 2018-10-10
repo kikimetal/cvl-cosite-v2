@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div id="bg">
-      <span>💙CARVANCL</span>
-    </div>
+  <div id="default">
+    <div id="bg"><span>💙CARVANCL</span></div>
     <Nav/>
     <nuxt/>
   </div>
@@ -10,10 +8,11 @@
 
 <script>
 import Nav from '~/components/Nav.vue'
+
 export default{
   components: {
     Nav,
-  }
+  },
 }
 </script>
 
@@ -23,8 +22,42 @@ export default{
   --scrollY: 0px;
 }
 
-.page > *{
+#default{
   overflow: hidden;
+  .page > div{ // e.g. #home
+    overflow: hidden;
+  }
+}
+
+
+section{ // TODO: remove
+  font-size: 60px;
+  width: 100%;
+  height: 186vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  @include futura;
+  color: $white;
+  @include md {
+    height: 58vw;
+  }
+  @include lg {
+    height: 52vw;
+  }
+}
+
+[data-scroll] {
+  transition: all 1s ease;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: scale(1);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  transform: scale(0.6);
 }
 
 #bg{

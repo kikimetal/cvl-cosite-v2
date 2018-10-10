@@ -81,7 +81,7 @@ export default {
     border-radius: var(--height);
     width: 0%;
     &.transition{
-      transition: width 0.4s ease;
+      transition: width 0.4s $ease-out;
     }
   }
 }

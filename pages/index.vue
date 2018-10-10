@@ -2,30 +2,46 @@
   <div class="page">
     <div id="home">
       <router-link to="/service">
+
         <section>
-          HELOOO<br>
-          HELOOO<br>
-          HELOOO<br>
-          HELOOO<br>
+          <div data-scroll>
+            HELOOO<br>HELOOO<br>HELOOO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELOOO<br>HELOOO<br>HELOOO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELOOO<br>HELOOO<br>HELOOO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELOOO<br>HELOOO<br>HELOOO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELOOO<br>HELOOO<br>HELOOO<br>
+          </div>
         </section>
-        <section>
-        </section>
+
       </router-link>
   </div>
   </div>
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
+
 export default {
-  name: 'home',
+  components: {},
+  mounted () {
+    ScrollOut()
+  },
 }
 </script>
 
@@ -36,10 +52,14 @@ export default {
 }
 #home{
   section{
+    font-size: 60px;
     width: 100%;
-    height: 500px;
-    height: 184vw;
-    font-size: 100px;
+    height: 190vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include futura;
     @include md {
       height: 58vw;
     }

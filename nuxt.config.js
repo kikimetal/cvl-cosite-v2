@@ -45,11 +45,6 @@ module.exports = {
     },
   },
 
-  // transition: {
-  //   name: 'page',
-  //   mode: 'in-out',
-  // },
-
   css: [
     'assets/css/myreset.scss',
   ],

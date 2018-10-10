@@ -2,30 +2,45 @@
   <div class="page">
     <div id="service">
       <router-link to="/">
+
         <section>
-          HELOOO<br>
-          HELOOO<br>
-          HELOOO<br>
-          HELOOO<br>
+          <div data-scroll>
+            HELLO<br>HELLO<br>HELLO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELLO<br>HELLO<br>HELLO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELLO<br>HELLO<br>HELLO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELLO<br>HELLO<br>HELLO<br>
+          </div>
         </section>
         <section>
+          <div data-scroll>
+            HELLO<br>HELLO<br>HELLO<br>
+          </div>
         </section>
-        <section>
-        </section>
+
       </router-link>
     </div>
   </div>
 </template>
 
 <script>
+import ScrollOut from "scroll-out"
+
 export default {
-  name: 'service',
+  mounted () {
+    ScrollOut()
+  },
 }
 </script>
 
@@ -35,19 +50,6 @@ export default {
   background: pale($pink);
 }
 #service{
-  overflow: hidden;
-  section{
-    width: 100%;
-    height: 500px;
-    height: 184vw;
-    font-size: 120px;
-    @include md {
-      height: 58vw;
-    }
-    @include lg {
-      height: 52vw;
-    }
-  }
 
   section:nth-of-type(1){
     background: #d6bec9;
