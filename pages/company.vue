@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="page">
-    <div id="service">
-      <h1>u-25</h1>
+    <div id="contact">
+      <h1>company</h1>
     </div>
   </div>
 </template>

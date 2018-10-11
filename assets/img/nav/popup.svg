@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 263 98.644">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 13px;
+      }
+
+      .cls-2 {
+        fill: #707070;
+        font-size: 17px;
+        font-family: HiraginoSans-W6, Hiragino Sans;
+      }
+
+      .cls-3 {
+        filter: url(#合体_3);
+      }
+    </style>
+    <filter id="合体_3" x="0" y="0" width="263" height="98.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ化_2163" data-name="グループ化 2163" transform="translate(-1035.5 -34.857)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 1035.5, 34.86)">
+      <path id="合体_3-2" data-name="合体 3" class="cls-1" d="M9070.5,2782.643a25.5,25.5,0,0,1,0-51h181a25.5,25.5,0,0,1,0,51Zm117.35-52.434,16.186-15.21v15.21Z" transform="translate(-9029.5 -2702.5)"/>
+    </g>
+    <text id="仕事を依頼する" class="cls-2" transform="translate(1108 96)"><tspan x="0" y="0">仕事を依頼する</tspan></text>
+  </g>
+</svg>

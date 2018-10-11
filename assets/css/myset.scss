@@ -13,17 +13,20 @@
 // font
 @mixin futura {
   font-family: "futura-pt-bold", sans-serif;
-  font-weight: 900;
+  // font-weight: 900;
 }
 
 // color
 $skyblue: #00C5FF;
 $blue: #2294E3;
+$violet: #3D28D6;
+$violet-dark: #2E3192;
 $pink: #FE9DA0;
 $red: #E45B5B;
 $white: #fafafa;
 $grey-1: #E9E8EB;
 $grey-5: #757575;
+$black: #3E3E3E;
 
 @function pale($color) {
   @return lighten(desaturate($color, 9%), 6%);
@@ -35,3 +38,12 @@ $grey-5: #757575;
 // easing
 $ease-out: cubic-bezier(0.165, 0.84, 0.44, 1);
 $ease-out-back: cubic-bezier(0,1.49,.55,1.3);
+$ease-out-back-fast: cubic-bezier(.08,1,.91,1.15);
+
+// flex center
+@mixin flex-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}

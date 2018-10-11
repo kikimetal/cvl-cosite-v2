@@ -1,6 +1,9 @@
 <template>
   <div id="default">
-    <div id="bg"><span>💙CARVANCL</span></div>
+    <!-- <div id="bg"><span>💙CARVANCL</span></div> -->
+    <div id="bg">
+      <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク">
+    </div>
     <Nav/>
     <nuxt/>
   </div>
@@ -13,14 +16,16 @@ export default{
   components: {
     Nav,
   },
+  created () {
+    window.addEventListener('scroll', () => {
+      this.$store.commit('setIsScrollTop')
+    })
+  }
 }
 </script>
 
 <style lang="scss">
 @import '~/assets/css/myset.scss';
-:root{
-  --scrollY: 0px;
-}
 
 #default{
   overflow: hidden;
@@ -30,15 +35,17 @@ export default{
 }
 
 [data-scroll] {
-  transition: all 1s ease;
+  // transition: all 1s $ease-out;
 }
 [data-scroll="in"] {
-  opacity: 1;
-  transform: scale(1);
+  // opacity: 1;
+  // transform: scale(1);
+  opacity: calc(var(--visible-y) * 1.05 + 0.1);
+
 }
 [data-scroll="out"] {
-  opacity: 0;
-  transform: scale(0.6);
+  opacity: 0.1;
+  // transform: scale(0.3);
 }
 
 #bg{
@@ -47,21 +54,28 @@ export default{
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 2rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   font-weight: 900;
-  background: $white;
+  // background: $pink;
+  // background: linear-gradient(145deg, $pink, $blue);
+  background: linear-gradient(155deg, $blue, $pink);
   z-index: -9999;
-  span{
-    @include futura;
-    color: $pink;//非対応のブラウザでの文字色を設定
-    background: -webkit-linear-gradient(12deg, $pink, $blue);//背景色にグラデーションを指定
-    -webkit-background-clip: text;//テキストでくり抜く
-    -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
-    line-height: 3;
+  // span{
+  //   @include futura;
+  //   color: $pink;//非対応のブラウザでの文字色を設定
+  //   background: -webkit-linear-gradient(12deg, $pink, $blue);//背景色にグラデーションを指定
+  //   -webkit-background-clip: text;//テキストでくり抜く
+  //   -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+  //   line-height: 3;
+  // }
+  img{
+    // mix-blend-mode: soft-light;
+    opacity: 0.5;
   }
 }
 
@@ -92,6 +106,7 @@ export default{
     background: inherit;
     transform-origin: right;
     animation: over-enter $duration $ease-out $delay both;
+    z-index: 99;
     @keyframes over-enter{
       0%{
         transform: translateX(0);
@@ -139,7 +154,37 @@ export default{
     }
   }
 }
-// .page-leave-to {}
-// .page-enter{}
+
+// popup animation
+.pop-enter-active{
+  transition: all 0.5s $ease-out-back;
+  transition-delay: 0.3s;
+}
+.pop-leave-active{
+  transition: all 0.9s ease;
+}
+.pop-leave-to {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.pop-enter{
+  opacity: 0;
+  transform: scale(0);
+}
+
+// simple fade animation
+.fade-enter-active{
+  transition: all 0.5s ease;
+}
+.fade-leave-active{
+  transition: all 0.7s ease;
+}
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter{
+  opacity: 0;
+}
+
 
 </style>

@@ -4,21 +4,32 @@ import heads from '~/assets/heads.js'
 import ScrollOut from "scroll-out"
 
 const store = () => new Vuex.Store({
+
   state: {
-    // heads: heads,
-    // test: () => {console.log($nuxt.$route.path)},
+    isScrollTop: true,
+    isShowNav: false,
     getHead: () => heads[$nuxt.$route.path],
     so: () => ScrollOut({
-        // cssProps: {
-        //   viewportY: true,
-        //   visibleY: true
-        // }
-      })
+      cssProps: {
+        // viewportY: true,
+        visibleY: true
+      }
+    })
   },
+
   mutations: {
-    // setWindowHeight (state) {
-    //   state.height = window.innerHeight
-    // },
+    setIsScrollTop (state) {
+      const isScrollTop = window.scrollY < 100
+      if (state.isScrollTop === isScrollTop) return
+      state.isScrollTop = isScrollTop
+    },
+    toggleNav (state, isShow) {
+      if (isShow === undefined) {
+        state.isShowNav = !state.isShowNav
+      }else{
+        state.isShowNav = isShow
+      }
+    },
   }
 })
 

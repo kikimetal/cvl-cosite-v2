@@ -1,42 +1,72 @@
 <template>
   <div class="page">
     <div id="home">
-      <router-link to="/service">
 
-        <section>
-          <div data-scroll>
-            HELOOO<br>HELOOO<br>HELOOO<br>
-          </div>
-        </section>
-        <section>
-          <div data-scroll>
-            HELOOO<br>HELOOO<br>HELOOO<br>
-          </div>
-        </section>
-        <section>
-          <div data-scroll>
-            HELOOO<br>HELOOO<br>HELOOO<br>
-          </div>
-        </section>
-        <section>
-          <div data-scroll>
-            HELOOO<br>HELOOO<br>HELOOO<br>
-          </div>
-        </section>
-        <section>
-          <div data-scroll>
-            HELOOO<br>HELOOO<br>HELOOO<br>
-          </div>
-        </section>
+      <section>
+        <img v-parallax="0.2" class="here" src="~/assets/img/home/here.png" alt="">
+        <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク">
+        <div class="under-bar" />
+        <p class="heading">答えを作るデザインプロジェクト推進企業</p>
+        <p v-parallax="-0.05" class="more">More!</p>
+        <img v-parallax="-0.1" class="arrow-bottom" src="~/assets/img/home/arrow-bottom.svg" alt="">
+      </section>
 
-      </router-link>
+      <section>
+        <img class="bg" src="~/assets/img/home/DMF.svg" alt="">
+        <img
+        data-scroll v-parallax="0.1"
+        class="file"
+        src="~/assets/img/home/file.png" alt="">
+      </section>
+
+      <section>
+        <img class="bg" src="~/assets/img/home/girl.svg" alt="">
+        <img
+        data-scroll v-parallax="0.1"
+        class="file"
+        src="~/assets/img/home/file.png" alt="">
+      </section>
+
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="phone" src="~/assets/img/home/phone.svg" alt="">
+        <img
+        data-scroll v-parallax="-0.1"
+        class="look-btn" src="~/assets/img/home/look-btn.svg" alt="">
+      </section>
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="cal" src="~/assets/img/home/cal.svg" alt="">
+        <img
+        data-scroll v-parallax="-0.1"
+        class="look-btn" src="~/assets/img/home/look-btn.svg" alt="">
+      </section>
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="hotel" src="~/assets/img/home/hotel.svg" alt="">
+        <img
+        data-scroll v-parallax="-0.1"
+        class="look-btn" src="~/assets/img/home/look-btn.svg" alt="">
+      </section>
+
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import VueParallaxJs from 'vue-parallax-js'
+Vue.use(VueParallaxJs, { className: 'v-parallax' })
+
+import Footer from '~/components/Footer.vue'
 export default {
-  components: {},
+  components: {
+    Footer,
+  },
   mounted () { this.$store.state.so() },
   head () { return this.$store.state.getHead() },
 }
@@ -49,7 +79,7 @@ export default {
 }
 #home{
   section{
-    font-size: 60px;
+    position: relative;
     width: 100%;
     height: 190vw;
     display: flex;
@@ -57,6 +87,7 @@ export default {
     justify-content: center;
     align-items: center;
     @include futura;
+    color: $white;
     @include md {
       height: 58vw;
     }
@@ -66,19 +97,110 @@ export default {
   }
 
   section:nth-of-type(1){
-    background: #2294E3;
+    background: $blue;
+
+    img.here{
+      padding-top: 7%;
+      width: 96%;
+      margin-left: auto;
+      opacity: 0.5;
+    }
+    img.co-name{
+      padding: 9% 0 2%;
+      width: 90%;
+      z-index: 1;
+    }
+    .under-bar{
+      width: 86%;
+      $height: 8px;
+      height: $height;
+      background: $white;
+      border-radius: $height 0 0 $height;
+      opacity: 0.2;
+    }
+    .heading{
+      padding-top: 5%;
+      padding-bottom: 15%;
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+    .more{
+      padding-bottom: 10%;
+      font-size: 1.1rem;
+      font-weight: 900;
+      opacity: 0.6;
+    }
+    img.arrow-bottom{
+      width: 0.75rem;
+      opacity: 0.3;
+    }
   }
+
   section:nth-of-type(2){
-    background: #E45B5B;
+    background: $red;
+    overflow: hidden;
+    .bg{
+      position: absolute;
+      width: auto;
+      height: 100%;
+      transform: scale(1.1);
+      opacity: 0.4;
+      z-index: 1;
+    }
+    .file{
+      z-index: 2;
+      width: 96%;
+      margin-left: auto;
+      padding-bottom: 30%;
+    }
   }
+
   section:nth-of-type(3){
-    background: #E9E8EB;
+    background: $grey-1;
+    overflow: hidden;
+    .bg{
+      position: absolute;
+      top: -3px;
+      width: auto;
+      height: 70%;
+      z-index: 1;
+    }
+    .file{
+      z-index: 2;
+      width: 96%;
+      margin-left: auto;
+      padding-top: 60%;
+    }
   }
+
+  section{
+    .look-btn{
+      padding-top: 10%;
+      padding-left: 10%;
+      margin-right: auto;
+      width: 65%;
+    }
+  }
+
   section:nth-of-type(4){
-    background: #757575;
+    background: $grey-5;
+    .phone{
+      width: 50%;
+    }
   }
+
   section:nth-of-type(5){
-    background: #FE9DA0;
+    background: $pink;
+    .cal{
+      width: 55%;
+    }
+  }
+
+  section:nth-of-type(6){
+    background: $violet-dark;
+    .hotel{
+      width: 53%;
+    }
   }
 }
 

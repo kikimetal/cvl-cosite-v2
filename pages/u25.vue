@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="page">
-    <div id="service">
+    <div id="contact">
       <h1>u-25</h1>
     </div>
   </div>

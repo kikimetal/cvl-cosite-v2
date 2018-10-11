@@ -49,5 +49,6 @@ module.exports = {
 
   css: [
     'assets/css/myreset.scss',
+    'assets/css/animate.css',
   ],
 }
