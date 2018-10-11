@@ -1,4 +1,4 @@
-const base = ' | 株式会社カーバンクル CARVANCL'
+const base = ' | 株式会社カーバンクル CARVANCL つくり手が活躍する機会を拡げ続けるために。'
 const common = {
   meta: [
     // { name: 'fb:admins', content: 'admin id' },
@@ -26,10 +26,30 @@ const generate = data => ({
 export default {
   '/': generate({
     title: 'Home',
-    description: 'カーバンクルのHOMEです！',
+    description: '株式会社カーバンクルです！',
   }),
   '/service': generate({
     title: 'Service',
     description: 'カーバンクルのSERVICEです！',
+  }),
+  '/u25': generate({
+    title: 'For Learners',
+    description: '日々、学ぶものたちへ贈る熱い想い！！',
+  }),
+  '/works': generate({
+    title: 'Works',
+    description: 'カーバンクルの実績です！',
+  }),
+  '/company': generate({
+    title: 'Company',
+    description: '日々、学ぶものたちへ贈る熱い想い！！',
+  }),
+  '/event': generate({
+    title: 'Event',
+    description: 'カーバンクルの実績です！',
+  }),
+  '/contact': generate({
+    title: 'Contact',
+    description: 'カーバンクルの実績です！',
   }),
 }
