@@ -3,53 +3,61 @@
     <div id="home">
 
       <section>
-        <img v-parallax="0.2" class="here" src="~/assets/img/home/here.png" alt="">
+        <img v-parallax="0.2" class="here" src="~/assets/img/home/here.png" alt="" />
         <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク">
         <div class="under-bar" />
         <p class="heading">答えを作るデザインプロジェクト推進企業</p>
         <p v-parallax="-0.05" class="more">More!</p>
-        <img v-parallax="-0.1" class="arrow-bottom" src="~/assets/img/home/arrow-bottom.svg" alt="">
+        <img v-parallax="-0.1" class="arrow-bottom" src="~/assets/img/home/arrow-bottom.svg" alt="" />
       </section>
 
       <section>
-        <img class="bg" src="~/assets/img/home/DMF.svg" alt="">
-        <img
-        data-scroll v-parallax="0.1"
+        <img class="bg" src="~/assets/img/home/DMF.svg" alt="" />
+        <router-link to="/service"
         class="file"
-        src="~/assets/img/home/file.png" alt="">
+        data-scroll v-parallax="0.1">
+          <img src="~/assets/img/home/file.png" alt="" />
+        </router-link>
       </section>
 
       <section>
-        <img class="bg" src="~/assets/img/home/girl.svg" alt="">
-        <img
-        data-scroll v-parallax="0.1"
+        <img class="bg" src="~/assets/img/home/girl.svg" alt="" />
+        <router-link to="/service"
         class="file"
-        src="~/assets/img/home/file.png" alt="">
+        data-scroll v-parallax="0.1">
+          <img src="~/assets/img/home/file.png" alt="" />
+        </router-link>
       </section>
 
       <section>
         <img
         data-scroll v-parallax="0.1"
-        class="phone" src="~/assets/img/home/phone.svg" alt="">
-        <img
-        data-scroll v-parallax="-0.1"
-        class="look-btn" src="~/assets/img/home/look-btn.svg" alt="">
+        class="phone" src="~/assets/img/home/phone.svg" alt="" />
+        <router-link to="/works"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
       </section>
       <section>
         <img
         data-scroll v-parallax="0.1"
-        class="cal" src="~/assets/img/home/cal.svg" alt="">
-        <img
-        data-scroll v-parallax="-0.1"
-        class="look-btn" src="~/assets/img/home/look-btn.svg" alt="">
+        class="cal" src="~/assets/img/home/cal.svg" alt="" />
+        <router-link to="/works"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
       </section>
       <section>
         <img
         data-scroll v-parallax="0.1"
-        class="hotel" src="~/assets/img/home/hotel.svg" alt="">
-        <img
-        data-scroll v-parallax="-0.1"
-        class="look-btn" src="~/assets/img/home/look-btn.svg" alt="">
+        class="hotel" src="~/assets/img/home/hotel.svg" alt="" />
+        <router-link to="/works"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
       </section>
 
       <Footer />
