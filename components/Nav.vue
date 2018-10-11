@@ -60,9 +60,9 @@
       <h2 class="heading">学生へ</h2>
       <router-link exact to="/u25" class="link">
         <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
-        <span class="en">For Learner</span><span class="ja">学ぶ人へ</span></router-link>
+        <span class="en">For Learners</span><span class="ja">学ぶ人へ</span></router-link>
 
-      <router-link exact to="/" class="link">
+      <router-link exact to="/event" class="link">
         <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
         <span class="en">Event</span><span class="ja">お話ししましょう</span></router-link>
     </nav>
@@ -175,14 +175,14 @@ export default {
       .ja{
         padding-top: 0.45em;
         font-size: 0.9rem;
-        opacity: 0.5;
+        opacity: 0.4;
       }
       .icon{
         margin-left: 2.6vw;
         margin-right: 2.6vw;
         width: 2em;
         height: 2em;
-        opacity: 0.5;
+        opacity: 0.3;
         &.book{
           padding-top: 0.3em;
         }
@@ -205,8 +205,7 @@ export default {
     top: 0;
     left: 0;
     right: 0;
-    padding-left: 1.5rem;
-    $height: 52px;
+    $height: 50px;
     height: $height;
     display: flex;
     flex-flow: row;
@@ -227,7 +226,8 @@ export default {
 
     .logo{
       margin-right: auto;
-      width: 20%;
+      padding-left: 4%;
+      width: 27%;
       @include flex-center;
     }
 
