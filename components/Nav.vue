@@ -170,7 +170,6 @@ export default {
       .en{
         padding-right: 0.3em;
         font-size: 1.7rem;
-        @include futura;
       }
       .ja{
         padding-top: 0.45em;
@@ -213,7 +212,6 @@ export default {
     align-items: center;
     background: $skyblue;
     color: $white;
-    @include futura;
     box-shadow: 0 0 12px 0 rgba(0,0,0,0.05);
     z-index: 99;
 
