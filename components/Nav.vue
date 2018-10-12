@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="nav">
 
-  <nav :class="['header', getContextColor()]">
+  <nav :class="['header', headerContextColor]">
     <router-link to="/" class="logo">
       <img src="~/assets/img/home/co-name.svg" alt="">
     </router-link>
@@ -21,7 +21,7 @@
   appear
   enter-active-class="animated tada"
   leave-active-class="animated bounceOutRight">
-    <router-link to="/contact" class="popup" v-show="$store.state.isScrollTop && !$store.state.isShowNav && $route.path !== '/contact'">
+    <router-link to="/contact" class="popup" v-show="$store.state.isScrollTop && !$store.state.isShowNav && $route.path === '/service'">
       <img src="~/assets/img/nav/popup.svg" alt="">
     </router-link>
   </transition>
@@ -60,7 +60,7 @@
       <h2 class="heading">学生へ</h2>
       <router-link exact to="/u25" class="link">
         <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
-        <span class="en">For Learners</span><span class="ja">学ぶ人へ</span></router-link>
+        <span class="en">For Learner</span><span class="ja">学ぶ人へ</span></router-link>
 
       <router-link exact to="/event" class="link">
         <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
@@ -77,16 +77,18 @@ export default {
     return {
       progressBarWidth: 0,
       pageTransitionActive: false,
+      headerContextColor: '',
     }
   },
   methods: {
     getContextColor () {
-      const path = this.$route.path
-      if (path === '/service') return 'black'
-      else if (path === '/u25') return 'violet'
-      else if (path === '/company') return 'violet-dark'
-      else if (path === '/contact') return 'red'
-      return 'slyblue'
+      const route = this.$route.name
+      if (route === 'index') return 'skyblue'
+      else if (route === 'service') return 'black'
+      else if (route === 'u25') return 'violet'
+      else if (route === 'company') return 'violet-dark'
+      else if (route === 'contact') return 'red'
+      return 'red'
     }
   },
   created () {
@@ -97,20 +99,25 @@ export default {
       const scrolled = (winScroll / height) * 100
       this.progressBarWidth = scrolled
     }
+
     window.addEventListener('scroll', setProgressBarWidth)
 
     this.$router.afterEach((to, from) => {
       this.progressBarWidth = 0
       this.pageTransitionActive = true
       setTimeout(() => this.pageTransitionActive = false, 1500)
+
+      this.headerContextColor = this.getContextColor()
     })
+  },
+  mounted () {
+    this.headerContextColor = this.getContextColor()
   },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
-
 #nav{
 
   .popup{
@@ -160,6 +167,7 @@ export default {
       opacity: 0.3;
     }
     .link{
+      padding-left: 2.6vw;
       height: 15vw;
       display: flex;
       flex-flow: row;
@@ -177,7 +185,6 @@ export default {
         opacity: 0.4;
       }
       .icon{
-        margin-left: 2.6vw;
         margin-right: 2.6vw;
         width: 2em;
         height: 2em;

@@ -17,14 +17,17 @@
   // transition: all 1s $ease-out;
 }
 [data-scroll="in"] {
-  // opacity: 1;
-  // transform: scale(1);
-  opacity: calc(var(--visible-y) * 1.05 + 0.1);
-
+  opacity: calc(var(--visible-y));
+}
+[data-scroll="in"][data-so-scale] {
+  opacity: calc(var(--visible-y));
+  transform: scale(calc(var(--visible-y) * 0.5 + 0.5));
 }
 [data-scroll="out"] {
-  opacity: 0.1;
-  // transform: scale(0.3);
+  opacity: 0;
+}
+[data-scroll="out"][data-so-scale]{
+  transform: scale(0);
 }
 
 /* nuxt page transition */

@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="page">
-    <div id="works">
+    <div id="magazine">
       <ComingSoon />
     </div>
     <Footer />

@@ -14,4 +14,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/css/myset.scss';
+.page{
+  background: pale($pink);
+}
 </style>

@@ -26,30 +26,34 @@ const generate = data => ({
 export default {
   '/': generate({
     title: 'Home',
-    description: '株式会社カーバンクルです！',
+    description: '株式会社CARVANCL（カーバンクル）は、若手デザイナーを起用したチームで新しい答えを生み出していくデザインプロジェクト推進企業です。上流工程からブランドづくりに関わり、ブランド戦略策定、UX設計、UIデザイン、デザインシステム設計を経てWebアプリケーション・サービスの制作を行います。',
   }),
   '/service': generate({
     title: 'Service',
-    description: 'カーバンクルのSERVICEです！',
+    description: 'クライアント様のディレクターとしてデザインプロジェクトをリードし、デザイン制作とブランドづくりに関わります。「デザインマネージャー・責任者がいない」という企業様の右腕として、プロジェクトを推進してまいります。',
   }),
   '/u25': generate({
-    title: 'For Learners',
-    description: '日々、学ぶものたちへ贈る熱い想い！！',
+    title: 'For Learner',
+    description: '美大・芸大生などのデザイナー学生に実践的な成長機会を提供し、その後のキャリアサポートまでを行います。「卒業後どんな職業が合っているかわからない」「早く世の中で通用するデザイナーに成長したい」という方に向けて、最高の環境を提供します。',
+  }),
+  '/company': generate({
+    title: 'Company',
+    description: 'クリエイティブによる地方創生事業や美術・デザイン系の学校での授業も行っております。「心を動かすつくり手が活躍する機会を拡げ続ける」ことを理念に掲げ、世の中で活躍するデザイナーを志す若手に、挑戦と成長の環境を届け続けます。',
+  }),
+  '/contact': generate({
+    title: 'Contact',
+    description: 'デザインをビジネス的に推進したい企業様、就活やキャリアに悩むデザイナー学生の方はこちらからご連絡ください',
   }),
   '/works': generate({
     title: 'Works',
     description: 'カーバンクルの実績です！',
   }),
-  '/company': generate({
-    title: 'Company',
-    description: '日々、学ぶものたちへ贈る熱い想い！！',
+  '/magazine': generate({
+    title: 'Magazine',
+    description: 'カーバンクルの実績です！',
   }),
   '/event': generate({
     title: 'Event',
-    description: 'カーバンクルの実績です！',
-  }),
-  '/contact': generate({
-    title: 'Contact',
     description: 'カーバンクルの実績です！',
   }),
 }

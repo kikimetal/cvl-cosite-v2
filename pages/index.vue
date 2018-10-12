@@ -22,7 +22,7 @@
 
       <section>
         <img class="bg" src="~/assets/img/home/girl.svg" alt="" />
-        <router-link to="/service"
+        <router-link to="/u25"
         class="file"
         data-scroll v-parallax="0.1">
           <img src="~/assets/img/home/file.png" alt="" />
@@ -32,27 +32,7 @@
       <section>
         <img
         data-scroll v-parallax="0.1"
-        class="phone" src="~/assets/img/home/phone.svg" alt="" />
-        <router-link to="/works"
-        class="look-btn"
-        data-scroll v-parallax="-0.1">
-          <img src="~/assets/img/home/look-btn.svg" alt="" />
-        </router-link>
-      </section>
-      <section>
-        <img
-        data-scroll v-parallax="0.1"
-        class="cal" src="~/assets/img/home/cal.svg" alt="" />
-        <router-link to="/works"
-        class="look-btn"
-        data-scroll v-parallax="-0.1">
-          <img src="~/assets/img/home/look-btn.svg" alt="" />
-        </router-link>
-      </section>
-      <section>
-        <img
-        data-scroll v-parallax="0.1"
-        class="hotel" src="~/assets/img/home/hotel.svg" alt="" />
+        class="figure" src="~/assets/img/home/phone.svg" alt="" />
         <router-link to="/works"
         class="look-btn"
         data-scroll v-parallax="-0.1">
@@ -60,8 +40,52 @@
         </router-link>
       </section>
 
-      <Footer />
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="figure" src="~/assets/img/home/cal.svg" alt="" />
+        <router-link to="/event"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
+      </section>
+
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="figure" src="~/assets/img/home/hotel.svg" alt="" />
+        <router-link to="/company"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
+      </section>
+
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="figure" src="~/assets/img/home/magazine.svg" alt="" />
+        <router-link to="/magazine"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
+      </section>
+
+      <section>
+        <img
+        data-scroll v-parallax="0.1"
+        class="figure" src="~/assets/img/home/contact.svg" alt="" />
+        <router-link to="/contact"
+        class="look-btn"
+        data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/look-btn.svg" alt="" />
+        </router-link>
+      </section>
+
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -188,24 +212,39 @@ export default {
 
   section:nth-of-type(4){
     background: $grey-5;
-    .phone{
+    .figure{
       width: 50%;
     }
   }
 
   section:nth-of-type(5){
     background: $pink;
-    .cal{
+    .figure{
       width: 55%;
     }
   }
 
   section:nth-of-type(6){
     background: $violet-dark;
-    .hotel{
+    .figure{
       width: 53%;
     }
   }
+
+  section:nth-of-type(7){
+    background: $violet-dark;
+    .figure{
+      width: 71%;
+    }
+  }
+
+  section:nth-of-type(8){
+    background: $violet-dark;
+    .figure{
+      width: 66%;
+    }
+  }
+
 }
 
 </style>

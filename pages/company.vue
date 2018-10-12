@@ -2,6 +2,10 @@
   <div class="page">
     <div id="contact">
       <h1>company</h1>
+      <h1>company</h1>
+      <h1>company</h1>
+      <h1>company</h1>
+      <h1>company</h1>
     </div>
   </div>
 </template>
@@ -14,4 +18,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/css/myset.scss';
+.page{
+  background: pale($violet-dark);
+}
 </style>
