@@ -66,11 +66,8 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueParallaxJs from 'vue-parallax-js'
-Vue.use(VueParallaxJs, { className: 'v-parallax' })
-
 import Footer from '~/components/Footer.vue'
+
 export default {
   components: {
     Footer,
@@ -83,7 +80,7 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
 .page{
-  background: pale($skyblue);
+  background: pale($blue);
 }
 #home{
   section{
@@ -94,7 +91,6 @@ export default {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    @include futura;
     color: $white;
     @include md {
       height: 58vw;
