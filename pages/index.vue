@@ -108,20 +108,7 @@ export default {
 }
 #home{
   section{
-    position: relative;
-    width: 100%;
-    height: 190vw;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    color: $white;
-    @include md {
-      height: 58vw;
-    }
-    @include lg {
-      height: 52vw;
-    }
+    @include section-simple;
   }
 
   section:nth-of-type(1){

@@ -95,9 +95,10 @@
         </p>
       </section>
 
-      <section class="last">
+      <section class="simple">
         <img src="~/assets/img/home/co-name.svg" alt="">
       </section>
+
 
     </div>
     <Footer />
@@ -194,7 +195,8 @@ export default {
     }
   }
 
-  section.last{
+  section.simple{
+    @include section-simple;
     background: $violet-dark;
   }
 
