@@ -10,6 +10,10 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueParallaxJs from 'vue-parallax-js'
+Vue.use(VueParallaxJs, { className: 'v-parallax' })
+
 import Nav from '~/components/Nav.vue'
 
 export default{
@@ -20,6 +24,15 @@ export default{
     window.addEventListener('scroll', () => {
       this.$store.commit('setIsScrollTop')
     })
+
+    ;(function(d) {
+      var config = {
+        kitId: 'ryo8wsk',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document)
   }
 }
 </script>
@@ -32,20 +45,6 @@ export default{
   .page > div{ // e.g. #home
     overflow: hidden;
   }
-}
-
-[data-scroll] {
-  // transition: all 1s $ease-out;
-}
-[data-scroll="in"] {
-  // opacity: 1;
-  // transform: scale(1);
-  opacity: calc(var(--visible-y) * 1.05 + 0.1);
-
-}
-[data-scroll="out"] {
-  opacity: 0.1;
-  // transform: scale(0.3);
 }
 
 #bg{
@@ -66,7 +65,6 @@ export default{
   background: linear-gradient(155deg, $blue, $pink);
   z-index: -9999;
   // span{
-  //   @include futura;
   //   color: $pink;//非対応のブラウザでの文字色を設定
   //   background: -webkit-linear-gradient(12deg, $pink, $blue);//背景色にグラデーションを指定
   //   -webkit-background-clip: text;//テキストでくり抜く
@@ -78,113 +76,4 @@ export default{
     opacity: 0.5;
   }
 }
-
-/* nuxt page transition */
-.page-enter-active {
-  position: relative;
-  $duration: 1.6s;
-  $delay: 0s;
-  animation: page-enter $duration $ease-out $delay both;
-  @keyframes page-enter{
-    0%{
-      transform: translateX(100vw);
-    }
-    66%{
-      transform: translateX(0);
-    }
-    100%{
-      transform: translateX(0);
-    }
-  }
-  &::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    transform-origin: right;
-    animation: over-enter $duration $ease-out $delay both;
-    z-index: 99;
-    @keyframes over-enter{
-      0%{
-        transform: translateX(0);
-      }
-      100%{
-        transform: translateX(-100vw);
-      }
-    }
-  }
-}
-.page-leave-to {
-  position: relative;
-  $duration: 1.1s;
-  $delay: 0.05s;
-  animation: page-leave $duration $ease-out $delay both;
-  @keyframes page-leave{
-    0%{
-      transform: translateX(0);
-    }
-    50%{
-      transform: translateX(-100vw);
-    }
-    100%{
-      transform: translateX(-100vw);
-    }
-  }
-  &::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    z-index: -1;
-    $under-delay: 0.15s;
-    animation: over-leave $duration - $under-delay $ease-out $under-delay + $delay both;
-    @keyframes over-leave{
-      0%{
-        transform: translateX(100vw);
-      }
-      100%{
-        transform: translateX(0);
-      }
-    }
-  }
-}
-
-// popup animation
-.pop-enter-active{
-  transition: all 0.5s $ease-out-back;
-  transition-delay: 0.3s;
-}
-.pop-leave-active{
-  transition: all 0.9s ease;
-}
-.pop-leave-to {
-  opacity: 0;
-  transform: translateY(-100px);
-}
-.pop-enter{
-  opacity: 0;
-  transform: scale(0);
-}
-
-// simple fade animation
-.fade-enter-active{
-  transition: all 0.5s ease;
-}
-.fade-leave-active{
-  transition: all 0.7s ease;
-}
-.fade-leave-to {
-  opacity: 0;
-}
-.fade-enter{
-  opacity: 0;
-}
-
-
 </style>
