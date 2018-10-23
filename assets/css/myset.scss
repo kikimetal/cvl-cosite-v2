@@ -65,4 +65,13 @@ $ease-out-back-fast: cubic-bezier(.08,1,.91,1.15);
   @include lg {
     height: 55vw;
   }
+  .figure{
+    width: 60%;
+  }
+  .link-to{
+    padding-top: 10%;
+    padding-left: 10%;
+    margin-right: auto;
+    width: 65%;
+  }
 }

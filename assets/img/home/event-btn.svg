@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.867 167.609">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 21px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Futura-Bold, Futura;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 38px;
+      }
+
+      .cls-5 {
+        font-family: HiraginoSans-W3, Hiragino Sans;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+  <g id="_04" data-name="04" transform="translate(0 82.96)">
+    <g id="グループ化_2840" data-name="グループ化 2840" transform="translate(0 18.641)">
+      <rect id="長方形_1363" data-name="長方形 1363" class="cls-1" width="408.867" height="24.45" transform="translate(0 0)"/>
+    </g>
+    <path id="パス_1230" data-name="パス 1230" class="cls-2" d="M398.6,1183.942H10.271A10.273,10.273,0,0,1,0,1173.671H0A10.267,10.267,0,0,1,10.271,1163.4H398.6a10.267,10.267,0,0,1,10.271,10.271h0A10.273,10.273,0,0,1,398.6,1183.942Z" transform="translate(0 -1144.441)"/>
+    <rect id="長方形_1364" data-name="長方形 1364" class="cls-1" width="408.867" height="24.45" transform="translate(0 60.042)"/>
+    <text id="Coming_soon..." data-name="Coming soon..." class="cls-3" transform="translate(0 78.649)"><tspan x="0" y="0">Coming soon...</tspan></text>
+    <text id="Event_学びにいく" data-name="Event
+学びにいく" class="cls-4" transform="translate(0 -43.96)"><tspan x="0" y="0">Event</tspan><tspan class="cls-5"><tspan x="0" y="46">学びにいく</tspan></tspan></text>
+  </g>
+</svg>

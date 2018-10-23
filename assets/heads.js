@@ -46,14 +46,14 @@ export default {
   }),
   '/works': generate({
     title: 'Works',
-    description: 'カーバンクルの実績です！',
+    description: 'カーバンクルの実績紹介です！',
   }),
   '/magazine': generate({
     title: 'Magazine',
-    description: 'カーバンクルの実績です！',
+    description: 'カーバンクルの実績紹介です！',
   }),
   '/event': generate({
     title: 'Event',
-    description: 'カーバンクルの実績です！',
+    description: 'カーバンクルのイベント紹介です！',
   }),
 }

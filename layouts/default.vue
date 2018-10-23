@@ -1,6 +1,5 @@
 <template>
   <div id="default">
-    <!-- <div id="bg"><span>💙CARVANCL</span></div> -->
     <div id="bg">
       <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク">
     </div>

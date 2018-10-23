@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.867 167.609">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: #fe9da0;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        font-size: 21px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Futura-Bold, Futura;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 38px;
+      }
+
+      .cls-5 {
+        font-family: HiraginoSans-W3, Hiragino Sans;
+        font-weight: 400;
+      }
+    </style>
+  </defs>
+  <g id="_06" data-name="06" transform="translate(0 80.542)">
+    <path id="パス_1234" data-name="パス 1234" class="cls-1" d="M398.6,1186.342H10.271A10.272,10.272,0,0,1,0,1176.071H0A10.267,10.267,0,0,1,10.271,1165.8H398.6a10.267,10.267,0,0,1,10.271,10.271h0A10.272,10.272,0,0,1,398.6,1186.342Z" transform="translate(0 -1144.424)"/>
+    <rect id="長方形_1366" data-name="長方形 1366" class="cls-2" width="408.867" height="24.45" transform="translate(0 62.459)"/>
+    <text id="Coming_soon..." data-name="Coming soon..." class="cls-3" transform="translate(0 81.067)"><tspan x="0" y="0">Coming soon...</tspan></text>
+    <text id="Contact_お問い合わせ" data-name="Contact
+お問い合わせ" class="cls-4" transform="translate(0 -41.542)"><tspan x="0" y="0">Contact</tspan><tspan class="cls-5"><tspan x="0" y="46">お問い合わせ</tspan></tspan></text>
+  </g>
+</svg>

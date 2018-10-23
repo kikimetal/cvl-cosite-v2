@@ -4,7 +4,7 @@
 
       <section>
         <h1 class="heading top">白紙からのデザインワーク</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/01.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/design-work.png" alt="" />
         <p data-scroll>
           CARVANCLは、既に誰でもできる形で方法が確立されたデザインワークを、大衆に向けて行う会社ではありません。
         </p>
@@ -12,7 +12,7 @@
 
       <section>
         <h1 class="heading" data-scroll>目指すのはブランドづくり</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/01.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/make-brand.png" alt="" />
         <p data-scroll>
           まだ正解が確立していない世界で、企業・プロダクトを熱狂的に愛してくれるファンをつくりだし、共にブランドを積み上げていく会社です。
         </p>
@@ -20,7 +20,7 @@
 
       <section>
         <h1 class="heading" data-scroll>御社のためのデザインチームです</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/01.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/design-team.png" alt="" />
         <p data-scroll>
           CARVANCLのデザインは全て期間を定めたプロジェクト型で、クライアント様に合わせてオーダーメイドされたデザインチームを編成します。
         </p>
@@ -34,7 +34,7 @@
 
       <section>
         <h1 class="heading" data-scroll>利用者の気持ちに真剣に向き合う</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/01.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/dmf.png" alt="" />
         <p data-scroll>
           デザインとはコミュニケーションであり、コミュニケーションの最も大きなリスクは「伝わないこと」よりも「誤解」です。
         </p>
@@ -80,7 +80,7 @@
 
       <section>
         <h1 class="heading" data-scroll>ともに御社のブランドをつくりたいと思っています</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/one-of-file.svg" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/branding-with-us.png" alt="" />
         <p>
           1つのデザインプロジェクトによって、企業のブランドが形作られることはあり得ません。
         </p>
@@ -95,8 +95,17 @@
         </p>
       </section>
 
-      <section class="simple">
-        <img src="~/assets/img/home/co-name.svg" alt="">
+      <section class="full to-magazine">
+        <img class="figure" src="~/assets/img/home/magazine.svg" alt="株式会社カーバンクルへのお問い合わせはこちら" data-scroll v-parallax="0.1" />
+        <router-link to="/contact" class="link-to" data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/magazine-btn.svg" alt="contact お問い合わせ" />
+        </router-link>
+      </section>
+      <section class="full to-contact">
+        <img class="figure" src="~/assets/img/home/contact.svg" alt="株式会社カーバンクルへのお問い合わせはこちら" data-scroll v-parallax="0.1" />
+        <router-link to="/contact" class="link-to" data-scroll v-parallax="-0.1">
+          <img src="~/assets/img/home/contact-btn.svg" alt="contact お問い合わせ" />
+        </router-link>
       </section>
 
 
@@ -124,7 +133,7 @@ export default {
 #service{
   background: $grey-3;
 
-  section{
+  section:not(.full){
     padding-bottom: 8rem;
 
     .heading{
@@ -144,7 +153,7 @@ export default {
       display: block;
       padding: 6.6em 1em 6em;
       margin: 0 auto;
-      width: 90%;
+      width: 100%;
     }
 
     p{
@@ -195,10 +204,20 @@ export default {
     }
   }
 
-  section.simple{
+  section.full{
     @include section-simple;
-    background: $violet-dark;
+    &.to-magazine{
+      background: #BCF0FF;
+      .figure{
+        width: 76%;
+      }
+    }
+    &.to-contact{
+      background: #9DFECA;
+      .figure{
+        width: 60%;
+      }
+    }
   }
-
 }
 </style>
