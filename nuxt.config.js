@@ -45,7 +45,10 @@ module.exports = {
     },
   },
 
-  plugins: [{ src: '~/plugins/routerOption.js', ssr: false }],
+  plugins: [
+    { src: '~/plugins/routerOption.js', ssr: false },
+    { src: '~/plugins/vue-parallax-js.js', ssr: false },
+  ],
 
   css: [
     'assets/css/myreset.scss',
