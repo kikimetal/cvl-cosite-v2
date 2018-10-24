@@ -16,10 +16,9 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
 .footer{
-  padding: 2.5rem 0.9rem 3.5rem;
+  padding: 2.5rem 1.5rem 3.5rem;
   background: $black;
   color: $white;
-  text-align: center;
   font-size: 0.9rem;
   line-height: 1.4;
   *{
@@ -30,7 +29,8 @@ export default {
     text-decoration: underline;
   }
   .logo{
-    width: 70%;
+    display: block;
+    width: 30%;
     padding-bottom: 0.5rem;
     opacity: 0.2;
   }
