@@ -87,7 +87,7 @@ export default {
       else if (route === 'service') return 'black'
       else if (route === 'learner') return 'violet'
       else if (route === 'company') return 'violet-dark'
-      else if (route === 'contact') return 'red'
+      else if (route === 'contact') return 'pink'
       return 'red'
     }
   },
@@ -211,7 +211,7 @@ export default {
     top: 0;
     left: 0;
     right: 0;
-    $height: 50px;
+    $height: $header-height-sm;
     height: $height;
     display: flex;
     flex-flow: row;
@@ -227,11 +227,12 @@ export default {
     &.black{ background: $black; }
     &.violet{ background: $violet; }
     &.violet-dark{ background: $violet-dark; }
+    &.pink{ background: $pink; }
     &.red{ background: $red; }
 
     .logo{
       margin-right: auto;
-      padding-left: 4%;
+      padding-left: 5%;
       width: 27%;
       @include flex-center;
     }
@@ -263,20 +264,21 @@ export default {
     }
 
     .contact{
-      width: 13%;
+      width: 12%;
       height: $height;
       @include flex-center;
-      justify-content: flex-start;
+      // justify-content: flex-start;
       img{
         display: block;
         width: 48%;
       }
     }
     .menu{
-      width: 13%;
+      margin-right: 2%;
+      width: 12%;
       height: $height;
       @include flex-center;
-      justify-content: flex-start;
+      // justify-content: flex-start;
       img{
         display: block;
         width: 43%;
