@@ -20,7 +20,7 @@
 
       <section class="to-for-learner">
         <img class="bg" src="~/assets/img/home/girl.svg" alt="株式会社カーバンクルの学生様向けサービス紹介へのリンク" />
-        <router-link to="/u25" class="file" data-scroll v-parallax="0.1">
+        <router-link to="/learner" class="file" data-scroll v-parallax="0.1">
           <img src="~/assets/img/home/to-for-learner.svg" alt="将来に悩み、成長のための環境を探している方に伝えたいことがあります。" />
         </router-link>
       </section>

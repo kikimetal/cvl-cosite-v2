@@ -58,7 +58,7 @@
         <span class="en">Contact</span><span class="ja">お問い合わせ</span></router-link>
 
       <h2 class="heading">学生へ</h2>
-      <router-link exact to="/u25" class="link">
+      <router-link exact to="/learner" class="link">
         <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
         <span class="en">For Learner</span><span class="ja">学ぶ人へ</span></router-link>
 
@@ -85,7 +85,7 @@ export default {
       const route = this.$route.name
       if (route === 'index') return 'skyblue'
       else if (route === 'service') return 'black'
-      else if (route === 'u25') return 'violet'
+      else if (route === 'learner') return 'violet'
       else if (route === 'company') return 'violet-dark'
       else if (route === 'contact') return 'red'
       return 'red'

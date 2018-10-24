@@ -9,10 +9,6 @@
 </template>
 
 <script>
-// import Vue from 'vue'
-// import VueParallaxJs from 'vue-parallax-js'
-// Vue.use(VueParallaxJs, { className: 'v-parallax' })
-
 import Nav from '~/components/Nav.vue'
 
 export default{

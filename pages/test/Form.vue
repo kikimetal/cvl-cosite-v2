@@ -90,7 +90,6 @@ export default {
       })
     }
   },
-  mounted () { this.$store.state.so() },
   head () { return this.$store.state.getHead() },
 }
 </script>

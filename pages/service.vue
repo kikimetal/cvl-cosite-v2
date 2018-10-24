@@ -20,7 +20,7 @@
 
       <section>
         <h1 class="heading" data-scroll>御社のためのデザインチームです</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/design-team.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/design-team.svg" alt="" />
         <p data-scroll>
           CARVANCLのデザインは全て期間を定めたプロジェクト型で、クライアント様に合わせてオーダーメイドされたデザインチームを編成します。
         </p>
@@ -48,7 +48,7 @@
 
       <section>
         <h2 class="subheading">
-          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
+          <img class="icon" src="~/assets/img/service/icon/discussion.svg" alt="">
           <span class="en">Discussion</span><span class="ja">問題の特定</span>
         </h2>
         <p>
@@ -59,7 +59,7 @@
         </p>
 
         <h2 class="subheading">
-          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
+          <img class="icon" src="~/assets/img/service/icon/analisys.svg" alt="">
           <span class="en">Analisys</span><span class="ja">分析と最適化</span>
         </h2>
         <p>
@@ -70,7 +70,7 @@
         </p>
 
         <h2 class="subheading">
-          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
+          <img class="icon" src="~/assets/img/service/icon/design-test.svg" alt="">
           <span class="en">Design Test</span><span class="ja">方向性の検証</span>
         </h2>
         <p>
@@ -98,14 +98,14 @@
       <section class="full to-magazine">
         <img class="figure" src="~/assets/img/home/magazine.svg" alt="株式会社カーバンクルへのお問い合わせはこちら" data-scroll v-parallax="0.1" />
         <router-link to="/contact" class="link-to" data-scroll v-parallax="-0.1">
-        <!-- <router-link to="/contact" class="link-to" data-scroll> -->
+          <!-- <router-link to="/contact" class="link-to" data-scroll> -->
           <img src="~/assets/img/home/magazine-btn.svg" alt="contact お問い合わせ" />
         </router-link>
       </section>
       <section class="full to-contact">
         <img class="figure" src="~/assets/img/home/contact.svg" alt="株式会社カーバンクルへのお問い合わせはこちら" data-scroll v-parallax="0.1" />
         <router-link to="/contact" class="link-to" data-scroll v-parallax="-0.1">
-        <!-- <router-link to="/contact" class="link-to" data-scroll> -->
+          <!-- <router-link to="/contact" class="link-to" data-scroll> -->
           <img src="~/assets/img/home/contact-btn.svg" alt="contact お問い合わせ" />
         </router-link>
       </section>
@@ -134,92 +134,95 @@ export default {
 }
 #service{
   background: $grey-3;
+}
 
-  section:not(.full){
-    padding-bottom: 8rem;
+section:not(.full){
+  padding-bottom: 8rem;
 
-    .heading{
-      &.top{ padding-top: 5.5em; }
-      width: 84%;
-      margin: 0 auto;
-      color: $black;
+  .heading{
+    &.top{ padding-top: 5.5em; }
+    width: 84%;
+    margin: 0 auto;
+    color: $black;
+    font-weight: 900;
+    font-size: 32px;
+    @include md{
       font-size: 40px;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      line-height: 1.3;
-      text-align: center;
-      border-bottom: 13px solid;
-    }
+    };
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    text-align: center;
+    border-bottom: 13px solid;
+  }
 
-    .figure{
-      display: block;
-      padding: 6.6em 1em 6em;
-      margin: 0 auto;
-      width: 100%;
-    }
+  .figure{
+    display: block;
+    padding: 6.6em 1em 6em;
+    margin: 0 auto;
+    width: 100%;
+  }
 
-    p{
-      padding: 0.5em 2em;
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
+  p{
+    padding: 0.5em 2em;
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
 
-    .subheading{
-      padding-left: 3%;
-      margin: 0 auto;
-      width: 84%;
-      height: 15vw;
-      display: flex;
-      flex-flow: row;
-      justify-content: flex-start;
-      align-items: center;
-      font-weight: bold;
-      border-bottom: 10px solid;
-      .en{
-        padding-right: 0.4em;
-        font-size: 1.7rem;
+  .subheading{
+    padding-left: 3%;
+    margin: 0 auto;
+    width: 84%;
+    height: 15vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 10px solid;
+    .en{
+      padding-right: 0.4em;
+      font-size: 1.7rem;
+    }
+    .ja{
+      padding-top: 0.45em;
+      font-size: 0.9rem;
+      opacity: 0.4;
+    }
+    .icon{
+      margin-right: 2.6vw;
+      width: 2em;
+      height: 2em;
+      &.book{
+        padding-top: 0.3em;
       }
-      .ja{
-        padding-top: 0.45em;
-        font-size: 0.9rem;
-        opacity: 0.4;
+      &.mail{
+        height: 1.2em;
       }
-      .icon{
-        margin-right: 2.6vw;
-        width: 2em;
-        height: 2em;
-        opacity: 0.3;
-        &.book{
-          padding-top: 0.3em;
-        }
-        &.mail{
-          height: 1.2em;
-        }
-      }
-    }
-
-    .subheading + p{
-      padding-top: 1.3em;
-    }
-    p + .subheading{
-      margin-top: 4em;
     }
   }
 
-  section.full{
-    @include section-simple;
-    &.to-magazine{
-      background: #BCF0FF;
-      .figure{
-        width: 76%;
-      }
+  .subheading + p{
+    padding-top: 1.3em;
+  }
+  p + .subheading{
+    margin-top: 4em;
+  }
+}
+
+section.full{
+  @include section-simple;
+  &.to-magazine{
+    background: #BCF0FF;
+    .figure{
+      width: 76%;
     }
-    &.to-contact{
-      background: #9DFECA;
-      .figure{
-        width: 60%;
-      }
+  }
+  &.to-contact{
+    background: #9DFECA;
+    .figure{
+      width: 60%;
     }
   }
 }
+
 </style>
