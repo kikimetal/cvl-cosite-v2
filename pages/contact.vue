@@ -10,6 +10,7 @@
     <Footer />
   </div>
 </template>
+お持ちの場合のみ
 
 <script>
 import ComingSoon from '~/components/ComingSoon.vue'

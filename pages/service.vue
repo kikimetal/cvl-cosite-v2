@@ -97,9 +97,9 @@
 
       <section class="full to-magazine">
         <img class="figure" src="~/assets/img/home/magazine.svg" alt="株式会社カーバンクルへのお問い合わせはこちら" data-scroll v-parallax="0.1" />
-        <router-link to="/contact" class="link-to" data-scroll v-parallax="-0.1">
+        <router-link to="/magazine" class="link-to" data-scroll v-parallax="-0.1">
           <!-- <router-link to="/contact" class="link-to" data-scroll> -->
-          <img src="~/assets/img/home/magazine-btn.svg" alt="contact お問い合わせ" />
+          <img src="~/assets/img/home/magazine-btn.svg" alt="magazine 実績紹介を見る" />
         </router-link>
       </section>
       <section class="full to-contact">

@@ -1,7 +1,7 @@
 <template>
   <div id="default">
     <div id="bg">
-      <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク">
+      <img class="co-name" src="~/assets/img/nav/logomark.png" alt="株式会社カーバンクルのロゴマーク">
     </div>
     <Nav/>
     <nuxt/>
@@ -55,19 +55,10 @@ export default{
   align-items: center;
   font-size: 3rem;
   font-weight: 900;
-  // background: $pink;
-  // background: linear-gradient(145deg, $pink, $blue);
   background: linear-gradient(155deg, $blue, $pink);
   z-index: -9999;
-  // span{
-  //   color: $pink;//非対応のブラウザでの文字色を設定
-  //   background: -webkit-linear-gradient(12deg, $pink, $blue);//背景色にグラデーションを指定
-  //   -webkit-background-clip: text;//テキストでくり抜く
-  //   -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
-  //   line-height: 3;
-  // }
   img{
-    // mix-blend-mode: soft-light;
+    width: 100px;
     opacity: 0.5;
   }
 }
