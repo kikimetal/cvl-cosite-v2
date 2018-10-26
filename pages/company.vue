@@ -36,30 +36,32 @@
 
       <section class="info">
         <img class="img" src="~/assets/img/home/company.svg" alt="">
-        <h1>会社情報</h1>
-        <p>
-          株式会社 CARVANCL（CARVANCL Inc.）
-        </p>
-        <p>
-          設立：2017年6月
-        </p>
-        <p>
-          資本金 ：100万円
-        </p>
-        <p>
-          代表取締役：徳田行伸（Yukinobu Tokuda）
-        </p>
-        <p>
-          Webサイト、アプリケーションの開発<br>
-          クリエイター育成/採用支援<br>
-          クリエイティブによる地方創生
-        </p>
-        <p>
-          本社：東京都千代田区五番町12-6  五番町マンションB1F
-        </p>
-        <p>
-          支社：山口県周南市若宮町1-21 3F
-        </p>
+        <div class="text">
+          <h1>会社情報</h1>
+          <p>
+            株式会社 CARVANCL（CARVANCL Inc.）
+          </p>
+          <p>
+            設立：2017年6月
+          </p>
+          <p>
+            資本金 ：100万円
+          </p>
+          <p>
+            代表取締役：徳田行伸（Yukinobu Tokuda）
+          </p>
+          <p>
+            Webサイト、アプリケーションの開発<br>
+            クリエイター育成/採用支援<br>
+            クリエイティブによる地方創生
+          </p>
+          <p>
+            本社：東京都千代田区五番町12-6  五番町マンションB1F
+          </p>
+          <p>
+            支社：山口県周南市若宮町1-21 3F
+          </p>
+        </div>
       </section>
 
     </div>
@@ -93,6 +95,9 @@ export default {
   display: flex;
   flex-flow: column;
   @include md{
+    padding: 8em calc((100vw - 660px) / 2) 4em;
+  }
+  @include lg{
     padding: 8em calc((100vw - 900px) / 2) 4em;
     flex-flow: column-reverse;
   }
@@ -134,7 +139,11 @@ export default {
   padding: 0 1.5em 4em;
   line-height: 1.9;
   @include md{
-    padding: 0 calc((100vw - 900px) / 2) 4.4em;
+    padding: 0 calc((100vw - 660px) / 2) 4.5em;
+  }
+  @include lg{
+    padding: 1em calc((100vw - 900px) / 2) 4.5em;
+    flex-flow: column-reverse;
   }
   p{
     padding: 1.1em 0;
@@ -157,6 +166,22 @@ export default {
     line-height: 2;
     border-bottom: 11px solid;
     text-align: center;
+  }
+
+  @include md{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    h1{
+      text-align: left;
+    }
+    .text{
+      width: 50%;
+    }
+    .img{
+      width: 27%;
+    }
   }
 }
 

@@ -24,6 +24,9 @@ export default {
   .usa{
     width: 20%;
     opacity: 0.4;
+    @include md{
+      width: 10%;
+    }
   }
   h1{
     font-size: 27px;
