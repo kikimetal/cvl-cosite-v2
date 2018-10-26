@@ -44,35 +44,35 @@
       <div class="flex-item">
         <h2 class="heading">共通メニュー</h2>
         <router-link exact to="/service" class="link">
-          <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
+          <img class="icon" src="~/assets/img/nav/icon/service.svg" alt="">
           <span class="en">Service</span><span class="ja">私たちのデザイン</span>
         </router-link>
         <router-link exact to="/magazine" class="link">
-          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
+          <img class="icon" src="~/assets/img/nav/icon/magazine.svg" alt="">
           <span class="en">Magazine</span><span class="ja">プロジェクトの中身</span>
         </router-link>
         <router-link exact to="/works" class="link">
-          <img class="icon book" src="~/assets/img/nav/book.svg" alt="">
+          <img class="icon" src="~/assets/img/nav/icon/works.svg" alt="">
           <span class="en">Works</span><span class="ja">実績一覧</span>
         </router-link>
-        <router-link exact to="/company" class="link">
-          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
-          <span class="en">Company</span><span class="ja">代表挨拶と会社概要</span>
-        </router-link>
         <router-link exact to="/contact" class="link">
-          <img class="icon mail" src="~/assets/img/nav/mail-b.svg" alt="">
+          <img class="icon" src="~/assets/img/nav/icon/contact.svg" alt="">
           <span class="en">Contact</span><span class="ja">お問い合わせ</span>
+        </router-link>
+        <router-link exact to="/company" class="link">
+          <img class="icon" src="~/assets/img/nav/icon/company.svg" alt="">
+          <span class="en">Company</span><span class="ja">代表挨拶と会社概要</span>
         </router-link>
       </div>
 
       <div class="flex-item">
         <h2 class="heading">学生へ</h2>
         <router-link exact to="/learner" class="link">
-          <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
+          <img class="icon" src="~/assets/img/nav/icon/learner.svg" alt="">
           <span class="en">For Learner</span><span class="ja">学ぶ人へ</span>
         </router-link>
         <router-link exact to="/event" class="link">
-          <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
+          <img class="icon" src="~/assets/img/nav/icon/event.svg" alt="">
           <span class="en">Event</span><span class="ja">お話ししましょう</span>
         </router-link>
       </div>

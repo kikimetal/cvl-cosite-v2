@@ -12,3 +12,6 @@ dist
 
 # firebase hosting
 .firebase
+
+# google search console
+static/google*

@@ -128,6 +128,7 @@ export default {
 
     @include md{
       padding-right: 50vw;
+      flex-flow: column;
       img.here{
         position: absolute;
         right: 0;
