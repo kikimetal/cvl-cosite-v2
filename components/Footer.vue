@@ -4,7 +4,7 @@
       <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク">
     </router-link>
     <span>2018 CARVANCL inc all right reserved.</span>
-    <span>&nbsp;/&nbsp;</span><router-link to="/privacy-policy">Privacy policy</router-link>
+    <!-- <span>&nbsp;/&nbsp;</span><router-link to="/privacy-policy">Privacy policy</router-link> -->
   </footer>
 </template>
 
@@ -34,5 +34,12 @@ export default {
     padding-bottom: 0.5rem;
     opacity: 0.2;
   }
+  @include md{
+    padding: 3rem 5rem;
+    .logo{
+      width: 20%;
+      max-width: 150px;
+    }
+  };
 }
 </style>

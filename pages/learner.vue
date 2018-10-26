@@ -125,7 +125,7 @@ section.top{
 }
 
 section.power-word{
-  @include section-simple;
+  @include fullpage;
   background: $violet;
   color: $white;
   font-weight: 800;
