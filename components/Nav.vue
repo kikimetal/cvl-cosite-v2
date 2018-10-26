@@ -35,36 +35,48 @@
   </transition>
 
   <transition
-  enter-active-class="animated jackInTheBox"
-  leave-active-class="animated rollOut">
+  enter-active-class="animated fadeInRight fast"
+  leave-active-class="animated fadeOutLeft">
     <nav class="global-menu"
     v-show="$store.state.isShowNav"
     @click="$store.commit('toggleNav', false)">
-      <h2 class="heading">共通メニュー</h2>
-      <router-link exact to="/service" class="link">
-        <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
-        <span class="en">Service</span><span class="ja">私たちのデザイン</span></router-link>
 
-      <router-link exact to="/company" class="link">
-        <img class="icon" src="~/assets/img/nav/company.svg" alt="">
-        <span class="en">Company</span><span class="ja">代表挨拶と会社概要</span></router-link>
+      <div class="flex-item">
+        <h2 class="heading">共通メニュー</h2>
+        <router-link exact to="/service" class="link">
+          <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
+          <span class="en">Service</span><span class="ja">私たちのデザイン</span>
+        </router-link>
+        <router-link exact to="/magazine" class="link">
+          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
+          <span class="en">Magazine</span><span class="ja">プロジェクトの中身</span>
+        </router-link>
+        <router-link exact to="/works" class="link">
+          <img class="icon book" src="~/assets/img/nav/book.svg" alt="">
+          <span class="en">Works</span><span class="ja">実績一覧</span>
+        </router-link>
+        <router-link exact to="/company" class="link">
+          <img class="icon" src="~/assets/img/nav/company.svg" alt="">
+          <span class="en">Company</span><span class="ja">代表挨拶と会社概要</span>
+        </router-link>
+        <router-link exact to="/contact" class="link">
+          <img class="icon mail" src="~/assets/img/nav/mail-b.svg" alt="">
+          <span class="en">Contact</span><span class="ja">お問い合わせ</span>
+        </router-link>
+      </div>
 
-      <router-link exact to="/works" class="link">
-        <img class="icon book" src="~/assets/img/nav/book.svg" alt="">
-        <span class="en">Works</span><span class="ja">実績一覧</span></router-link>
+      <div class="flex-item">
+        <h2 class="heading">学生へ</h2>
+        <router-link exact to="/learner" class="link">
+          <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
+          <span class="en">For Learner</span><span class="ja">学ぶ人へ</span>
+        </router-link>
+        <router-link exact to="/event" class="link">
+          <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
+          <span class="en">Event</span><span class="ja">お話ししましょう</span>
+        </router-link>
+      </div>
 
-      <router-link exact to="/contact" class="link">
-        <img class="icon mail" src="~/assets/img/nav/mail-b.svg" alt="">
-        <span class="en">Contact</span><span class="ja">お問い合わせ</span></router-link>
-
-      <h2 class="heading">学生へ</h2>
-      <router-link exact to="/learner" class="link">
-        <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
-        <span class="en">For Learner</span><span class="ja">学ぶ人へ</span></router-link>
-
-      <router-link exact to="/event" class="link">
-        <img class="icon" src="~/assets/img/nav/hands.svg" alt="">
-        <span class="en">Event</span><span class="ja">お話ししましょう</span></router-link>
     </nav>
   </transition>
 
@@ -126,6 +138,10 @@ export default {
     right: 10vw;
     width: 200px;
     z-index: 999;
+    @include md{
+      top: 40px;
+      right: 120px;
+    }
   }
 
   .global-menu-background{
@@ -161,20 +177,45 @@ export default {
     border-radius: 14px;
     box-shadow: 0 0 0 12px $grey-5;
     z-index: 9999;
+    @include md{
+      max-width: 1000px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: flex-start;
+      .flex-item{
+        width: 46%;
+        max-width: 400px;
+        margin: 0 1%;
+      }
+    }
+
     .heading{
       padding: 4vw 0 2vw;
       font-weight: 600;
       opacity: 0.3;
+      @include md{
+        padding: 2em 1.8em 0.3em;
+      }
     }
     .link{
+      margin: 3px 0;
       padding-left: 2.6vw;
       height: 15vw;
+      max-height: 66px;
       display: flex;
       flex-flow: row;
       justify-content: flex-start;
       align-items: center;
       font-weight: bold;
       border-radius: 0.5em;
+      transition: all 0.2s ease;
+      @include md{
+        height: 4.4em;
+        &:hover{
+          background: rgba($skyblue, 0.2);
+        }
+      }
       .en{
         padding-right: 0.3em;
         font-size: 1.7rem;
@@ -185,7 +226,7 @@ export default {
         opacity: 0.4;
       }
       .icon{
-        margin-right: 2.6vw;
+        margin-right: 2vw;
         width: 2em;
         height: 2em;
         opacity: 0.3;
@@ -232,9 +273,15 @@ export default {
 
     .logo{
       margin-right: auto;
-      padding-left: 5%;
-      width: 27%;
+      margin-left: 5%;
+      width: 23%;
       @include flex-center;
+      @include md{
+        // padding-left: 7%;
+        width: auto;
+        transform-origin: left center;
+        transform: scale(0.45);
+      }
     }
 
     .progress-bar-container{
@@ -245,16 +292,17 @@ export default {
       margin: auto;
       width: 28%;
       --height: 5px;
-      background: rgba(0,0,0,0.1);
+      // background: rgba(0,0,0,0.2);
+      background: rgba(255,255,255,0.3);
       border-radius: var(--height);
       @include md{
-        --height: 11px;
+        --height: 7px;
         width: 22%;
       }
       .bar {
         padding-left: calc(var(--height) * 1.3);
         height: var(--height);
-        background: rgba($white, 0.8);
+        background: rgba($white, 0.7);
         border-radius: var(--height);
         width: 0%;
         &.transition{
@@ -267,21 +315,31 @@ export default {
       width: 12%;
       height: $height;
       @include flex-center;
-      // justify-content: flex-start;
+      cursor: pointer;
       img{
-        display: block;
-        width: 48%;
+        transform: scale(0.5);
+      }
+      @include md{
+        width: 90px;
+        img{
+          transform: scale(0.45);
+        }
       }
     }
     .menu{
-      margin-right: 2%;
+      margin-right: 3%;
       width: 12%;
       height: $height;
       @include flex-center;
-      // justify-content: flex-start;
+      cursor: pointer;
       img{
-        display: block;
-        width: 43%;
+        transform: scale(0.5);
+      }
+      @include md{
+        width: 90px;
+        img{
+          transform: scale(0.45);
+        }
       }
     }
   }
