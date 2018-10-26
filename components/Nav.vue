@@ -153,12 +153,19 @@ export default {
     background: rgba(0,0,0,0.4);
     z-index: 999;
     backdrop-filter: blur(20px);
+    cursor: pointer;
     img.close{
       position: absolute;
       top: 3.8%;
       right: 8%;
       width: 1.6rem;
       height: auto;
+      @include md{
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -338,7 +345,7 @@ export default {
       @include md{
         width: 90px;
         img{
-          transform: scale(0.45);
+          transform: scale(0.42);
         }
       }
     }

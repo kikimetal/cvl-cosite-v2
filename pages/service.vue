@@ -4,23 +4,22 @@
 
       <section>
         <h1 class="heading top">白紙からのデザインワーク</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/design-work.png" alt="" />
         <p data-scroll>
           CARVANCLは、既に誰でもできる形で方法が確立されたデザインワークを、大衆に向けて行う会社ではありません。
         </p>
+        <img class="figure" data-scroll src="~/assets/img/service/design-work.png" alt="" />
       </section>
 
-      <section>
-        <h1 class="heading" data-scroll>目指すのはブランドづくり</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/make-brand.png" alt="" />
+      <section class="make-brand">
+        <h1 class="heading make-brand" data-scroll>目指すのはブランドづくり</h1>
         <p data-scroll>
           まだ正解が確立していない世界で、企業・プロダクトを熱狂的に愛してくれるファンをつくりだし、共にブランドを積み上げていく会社です。
         </p>
+        <img class="figure" data-scroll src="~/assets/img/service/make-brand.png" alt="" />
       </section>
 
-      <section>
-        <h1 class="heading" data-scroll>御社のためのデザインチームです</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/design-team.svg" alt="" />
+      <section class="design-team">
+        <h1 class="heading design-team" data-scroll>御社のためのデザインチーム</h1>
         <p data-scroll>
           CARVANCLのデザインは全て期間を定めたプロジェクト型で、クライアント様に合わせてオーダーメイドされたデザインチームを編成します。
         </p>
@@ -30,9 +29,10 @@
         <p data-scroll>
           クライアント様と綿密やヒアリングやディスカッション、アイデアブレストを重ね、デザインアウトプットを洗練させていきます。
         </p>
+        <img class="figure" data-scroll src="~/assets/img/service/design-team.svg" alt="" />
       </section>
 
-      <section>
+      <section class="dmf">
         <h1 class="heading" data-scroll>利用者の気持ちに真剣に向き合う</h1>
         <img class="figure" data-scroll src="~/assets/img/service/dmf.png" alt="" />
         <p data-scroll>
@@ -46,40 +46,46 @@
         </p>
       </section>
 
-      <section>
-        <h2 class="subheading">
-          <img class="icon" src="~/assets/img/service/icon/discussion.svg" alt="">
-          <span class="en">Discussion</span><span class="ja">問題の特定</span>
-        </h2>
-        <p>
-          質問を重ね、情報を収集し、解決すべき問題を特定するプロセスです。
-        </p>
-        <p>
-          デザインプロジェクトにおける目標達成が企業戦略の推進につながるように、プロジェクト全体を設計します。その過程で業界とユーザーの情報収集を十分に行うとともに、クライアント様とデザインチームで密接な議論を丁寧に重ねます。
-        </p>
+      <section class="process-container">
+        <div>
+          <h2 class="subheading">
+            <img class="icon" src="~/assets/img/service/icon/discussion.svg" alt="">
+            <span class="en">Discussion</span><span class="ja">問題の特定</span>
+          </h2>
+          <p>
+            質問を重ね、情報を収集し、解決すべき問題を特定するプロセスです。
+          </p>
+          <p>
+            デザインプロジェクトにおける目標達成が企業戦略の推進につながるように、プロジェクト全体を設計します。その過程で業界とユーザーの情報収集を十分に行うとともに、クライアント様とデザインチームで密接な議論を丁寧に重ねます。
+          </p>
+        </div>
 
-        <h2 class="subheading">
-          <img class="icon" src="~/assets/img/service/icon/analisys.svg" alt="">
-          <span class="en">Analisys</span><span class="ja">分析と最適化</span>
-        </h2>
-        <p>
-          デザインのコンセプトと方向性を、検証と分析で絞り込んでいくプロセスです。
-        </p>
-        <p>
-          対象ユーザーからの実際のフィードバックを受け、修正を迅速に繰り返します。その過程で、最適なデザインを実現するための意思決定をプロジェクトチームで何度も行い、デザインアウトプットとして磨き上げます。
-        </p>
+        <div>
+          <h2 class="subheading">
+            <img class="icon" src="~/assets/img/service/icon/analisys.svg" alt="">
+            <span class="en">Analisys</span><span class="ja">分析と最適化</span>
+          </h2>
+          <p>
+            デザインのコンセプトと方向性を、検証と分析で絞り込んでいくプロセスです。
+          </p>
+          <p>
+            対象ユーザーからの実際のフィードバックを受け、修正を迅速に繰り返します。その過程で、最適なデザインを実現するための意思決定をプロジェクトチームで何度も行い、デザインアウトプットとして磨き上げます。
+          </p>
+        </div>
 
-        <h2 class="subheading">
-          <img class="icon" src="~/assets/img/service/icon/design-test.svg" alt="">
-          <span class="en">Design Test</span><span class="ja">方向性の検証</span>
-        </h2>
-        <p>
-          様々なデザインの方向性と解決策を検討し、対象ユーザーを巻き込んだ理想的なシナリオを探るプロセスです。収集したデータ・情報からインサイトを引き出し、様々な仮説を具体的に検証していきます。その過程で、ペルソナやストーリーボードを洗練させていき、特定した問題と解決策との対応を図ります。
-        </p>
+        <div>
+          <h2 class="subheading">
+            <img class="icon" src="~/assets/img/service/icon/design-test.svg" alt="">
+            <span class="en">Design Test</span><span class="ja">方向性の検証</span>
+          </h2>
+          <p>
+            様々なデザインの方向性と解決策を検討し、対象ユーザーを巻き込んだ理想的なシナリオを探るプロセスです。収集したデータ・情報からインサイトを引き出し、様々な仮説を具体的に検証していきます。その過程で、ペルソナやストーリーボードを洗練させていき、特定した問題と解決策との対応を図ります。
+          </p>
+        </div>
       </section>
 
-      <section>
-        <h1 class="heading" data-scroll>ともに御社のブランドをつくりたいと思っています</h1>
+      <section class="branding-with-us">
+        <h1 class="heading" data-scroll>ともに御社のブランドを<br class="md">つくりたいと思っています</h1>
         <img class="figure" data-scroll src="~/assets/img/service/branding-with-us.png" alt="" />
         <p>
           1つのデザインプロジェクトによって、企業のブランドが形作られることはあり得ません。
@@ -135,22 +141,42 @@ export default {
 }
 
 section:not(.full){
+  position: relative;
   padding-bottom: 8rem;
+  @include md{
+    padding: 3%;
+  }
+
+  $md-width: 48%;
 
   .heading{
     &.top{ padding-top: 5.5em; }
     width: 84%;
     margin: 0 auto;
+    margin-bottom: 0.3em;
     color: $black;
     font-weight: 900;
     font-size: 32px;
-    @include md{
-      font-size: 40px;
-    };
     letter-spacing: 0.1em;
     line-height: 1.3;
     text-align: center;
     border-bottom: 13px solid;
+    @include md{
+      font-size: 33px;
+      width: $md-width;
+      margin: 0;
+      margin-right: auto;
+      margin-bottom: 0.5em;
+    }
+  }
+  &.make-brand,
+  &.design-team{
+    .heading{
+      @include md{
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
   }
 
   .figure{
@@ -158,12 +184,66 @@ section:not(.full){
     padding: 6.6em 1em 6em;
     margin: 0 auto;
     width: 100%;
+    @include md{
+      padding: 3em 1em 9em;
+      width: 70%;
+      max-width: 1000px;
+    }
+  }
+  &.design-team{
+    @include md{
+      padding-bottom: 16%;
+      .figure{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 49%;
+        padding: 3%;
+        padding-left: 11%;
+      }
+    }
+  }
+  &.dmf{
+    @include md{
+      .figure{
+        padding: 3em 1em 5em;
+      }
+    }
   }
 
   p{
     padding: 0.5em 2em;
     font-size: 1.1rem;
     line-height: 1.7;
+    @include md{
+      padding: 0.6em 0;
+      width: $md-width;
+    }
+  }
+  &.make-brand,
+  &.design-team{
+    @include md{
+      p{
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+  }
+  &.dmf{
+    @include md{
+      margin-bottom: 120px;
+      p{
+        width: 70%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+section.process-container{
+  & > *{
+    padding-bottom: 3em;
   }
 
   .subheading{
@@ -198,12 +278,48 @@ section:not(.full){
       }
     }
   }
-
   .subheading + p{
     padding-top: 1.3em;
   }
   p + .subheading{
     margin-top: 4em;
+  }
+
+  @include md{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 120px;
+    & > *{
+      width: 32%;
+    }
+    .subheading{
+      height: 4.6em;
+      .icon{
+        margin-right: 1em;
+      }
+    }
+    p{
+      width: 84%;
+      margin: 0 auto;
+    }
+  }
+}
+
+section.branding-with-us{
+  @include md{
+    margin-bottom: 200px;
+    .figure{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      padding: 4%;
+    }
+    p{
+      padding: 0.6em 2em;
+    }
   }
 }
 
@@ -213,12 +329,20 @@ section.full{
     background: #BCF0FF;
     .figure{
       width: 76%;
+      @include  md{
+        width: 50%;
+        padding: 9%;
+      }
     }
   }
   &.to-contact{
     background: #9DFECA;
     .figure{
       width: 60%;
+      @include  md{
+        width: 47%;
+        padding: 12%;
+      }
     }
   }
 }

@@ -12,6 +12,18 @@
     sans-serif;
 }
 
+br.md{
+  display: none;
+  @include md{
+    display: block;
+  }
+}
+br.sm{
+  @include md{
+    display: none;
+  }
+}
+
 /* scroll out js */
 [data-scroll] {
   // transition: all 1s $ease-out;
