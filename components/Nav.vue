@@ -284,7 +284,6 @@ export default {
       width: 23%;
       @include flex-center;
       @include md{
-        // padding-left: 7%;
         width: auto;
         transform-origin: left center;
         transform: scale(0.45);
@@ -299,12 +298,12 @@ export default {
       margin: auto;
       width: 28%;
       --height: 5px;
-      // background: rgba(0,0,0,0.2);
       background: rgba(255,255,255,0.3);
       border-radius: var(--height);
       @include md{
         --height: 7px;
         width: 22%;
+        max-width: 230px;
       }
       .bar {
         padding-left: calc(var(--height) * 1.3);
