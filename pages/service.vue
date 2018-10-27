@@ -7,7 +7,7 @@
         <p data-scroll>
           CARVANCLは、既に誰でもできる形で方法が確立されたデザインワークを、大衆に向けて行う会社ではありません。
         </p>
-        <img class="figure" data-scroll src="~/assets/img/service/design-work.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/design-work.svg" alt="" />
       </section>
 
       <section class="make-brand">
@@ -15,7 +15,7 @@
         <p data-scroll>
           まだ正解が確立していない世界で、企業・プロダクトを熱狂的に愛してくれるファンをつくりだし、共にブランドを積み上げていく会社です。
         </p>
-        <img class="figure" data-scroll src="~/assets/img/service/make-brand.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/make-brand.svg" alt="" />
       </section>
 
       <section class="design-team">
@@ -34,7 +34,7 @@
 
       <section class="dmf">
         <h1 class="heading" data-scroll>利用者の気持ちに真剣に向き合う</h1>
-        <img class="figure" data-scroll src="~/assets/img/service/dmf.png" alt="" />
+        <img class="figure" data-scroll src="~/assets/img/service/dmf.svg" alt="" />
         <p data-scroll>
           デザインとはコミュニケーションであり、コミュニケーションの最も大きなリスクは「伝わないこと」よりも「誤解」です。
         </p>
