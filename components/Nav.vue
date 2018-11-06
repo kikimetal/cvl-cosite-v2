@@ -85,15 +85,15 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       progressBarWidth: 0,
       pageTransitionActive: false,
-      headerContextColor: '',
+      headerContextColor: ''
     }
   },
   methods: {
-    getContextColor () {
+    getContextColor() {
       const route = this.$route.name
       if (route === 'index') return 'skyblue'
       else if (route === 'service') return 'black'
@@ -103,11 +103,14 @@ export default {
       return 'red'
     }
   },
-  created () {
+  created() {
     const setProgressBarWidth = () => {
       if (this.pageTransitionActive) return
-      const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight
       const scrolled = (winScroll / height) * 100
       this.progressBarWidth = scrolled
     }
@@ -117,50 +120,49 @@ export default {
     this.$router.afterEach((to, from) => {
       this.progressBarWidth = 0
       this.pageTransitionActive = true
-      setTimeout(() => this.pageTransitionActive = false, 1500)
+      setTimeout(() => (this.pageTransitionActive = false), 1500)
 
       this.headerContextColor = this.getContextColor()
     })
   },
-  mounted () {
+  mounted() {
     this.headerContextColor = this.getContextColor()
-  },
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
-#nav{
-
-  .popup{
+#nav {
+  .popup {
     position: fixed;
     top: 10vw;
     right: 10vw;
     width: 200px;
     z-index: 999;
-    @include md{
+    @include md {
       top: 40px;
       right: 120px;
     }
   }
 
-  .global-menu-background{
+  .global-menu-background {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 999;
     backdrop-filter: blur(20px);
     cursor: pointer;
-    img.close{
+    img.close {
       position: absolute;
       top: 3.8%;
       right: 8%;
       width: 1.6rem;
       height: auto;
-      @include md{
+      @include md {
         top: 5%;
         left: 0;
         right: 0;
@@ -169,7 +171,7 @@ export default {
     }
   }
 
-  .global-menu{
+  .global-menu {
     position: fixed;
     top: 12%;
     left: 0;
@@ -184,28 +186,28 @@ export default {
     border-radius: 14px;
     box-shadow: 0 0 0 12px $grey-5;
     z-index: 9999;
-    @include md{
+    @include md {
       max-width: 1000px;
       display: flex;
       flex-flow: row;
       justify-content: center;
       align-items: flex-start;
-      .flex-item{
+      .flex-item {
         width: 46%;
         max-width: 400px;
         margin: 0 1%;
       }
     }
 
-    .heading{
+    .heading {
       padding: 4vw 0 2vw;
       font-weight: 600;
       opacity: 0.3;
-      @include md{
+      @include md {
         padding: 2em 1.8em 0.3em;
       }
     }
-    .link{
+    .link {
       margin: 3px 0;
       padding-left: 2.6vw;
       height: 15vw;
@@ -217,44 +219,44 @@ export default {
       font-weight: bold;
       border-radius: 0.5em;
       transition: all 0.2s ease;
-      @include md{
+      @include md {
         height: 4.4em;
-        &:hover{
+        &:hover {
           background: rgba($skyblue, 0.2);
         }
       }
-      .en{
+      .en {
         padding-right: 0.3em;
         font-size: 1.7rem;
       }
-      .ja{
+      .ja {
         padding-top: 0.45em;
         font-size: 0.9rem;
         opacity: 0.4;
       }
-      .icon{
+      .icon {
         margin-right: 2vw;
         width: 2em;
         height: 2em;
         opacity: 0.3;
-        &.book{
+        &.book {
           padding-top: 0.3em;
         }
-        &.mail{
+        &.mail {
           height: 1.2em;
         }
       }
-      &.nuxt-link-exact-active{
+      &.nuxt-link-exact-active {
         background: $skyblue;
         color: $white;
-        .icon{
+        .icon {
           filter: brightness(5);
         }
       }
     }
   }
 
-  .header{
+  .header {
     position: fixed;
     top: 0;
     left: 0;
@@ -267,30 +269,42 @@ export default {
     align-items: center;
     background: $skyblue;
     color: $white;
-    box-shadow: 0 0 12px 0 rgba(0,0,0,0.05);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
     z-index: 99;
 
     transition: all 0.9s ease;
 
-    &.black{ background: $black; }
-    &.violet{ background: $violet; }
-    &.violet-dark{ background: $violet-dark; }
-    &.pink{ background: $pink; }
-    &.red{ background: $red; }
+    &.black {
+      background: $black;
+    }
+    &.violet {
+      background: $violet;
+    }
+    &.violet-dark {
+      background: $violet-dark;
+    }
+    &.pink {
+      background: $pink;
+    }
+    &.red {
+      background: $red;
+    }
 
-    .logo{
+    .logo {
       margin-right: auto;
       margin-left: 5%;
       width: 23%;
       @include flex-center;
-      @include md{
-        width: auto;
+      @include md {
+        // width: auto;
+        // width: 40%;
+        width: 340px;
         transform-origin: left center;
         transform: scale(0.45);
       }
     }
 
-    .progress-bar-container{
+    .progress-bar-container {
       box-sizing: content-box;
       position: absolute;
       left: 0;
@@ -298,9 +312,9 @@ export default {
       margin: auto;
       width: 28%;
       --height: 5px;
-      background: rgba(255,255,255,0.3);
+      background: rgba(255, 255, 255, 0.3);
       border-radius: var(--height);
-      @include md{
+      @include md {
         --height: 7px;
         width: 22%;
         max-width: 230px;
@@ -311,39 +325,39 @@ export default {
         background: rgba($white, 0.7);
         border-radius: var(--height);
         width: 0%;
-        &.transition{
+        &.transition {
           transition: width 0.4s $ease-out;
         }
       }
     }
 
-    .contact{
+    .contact {
       width: 12%;
       height: $height;
       @include flex-center;
       cursor: pointer;
-      img{
+      img {
         transform: scale(0.5);
       }
-      @include md{
+      @include md {
         width: 90px;
-        img{
+        img {
           transform: scale(0.45);
         }
       }
     }
-    .menu{
+    .menu {
       margin-right: 3%;
       width: 12%;
       height: $height;
       @include flex-center;
       cursor: pointer;
-      img{
+      img {
         transform: scale(0.5);
       }
-      @include md{
+      @include md {
         width: 90px;
-        img{
+        img {
           transform: scale(0.42);
         }
       }
