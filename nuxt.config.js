@@ -32,7 +32,7 @@ module.exports = {
       },
       { property: 'og:url', content: 'https://carvancl.co.jp' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'https://carvancl.co.jp/og-card.png' },
+      { property: 'og:image', content: 'https://carvancl.co.jp/og-image.png' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
