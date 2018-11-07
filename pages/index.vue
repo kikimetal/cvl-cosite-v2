@@ -7,7 +7,7 @@
         <img class="here" src="~/assets/img/home/here.png" alt="" />
         <img class="co-name" src="~/assets/img/home/co-name.svg" alt="株式会社カーバンクルのロゴマーク" v-parallax="0.1">
         <!-- <div class="under-bar" v-parallax="0.1"/> -->
-        <p class="heading" v-parallax="0.1">答えを作るデザインプロジェクト推進企業</p>
+        <p class="heading" v-parallax="0.1">答えをつくるデザインプロジェクト推進企業</p>
         <p class="more" v-parallax="0.1">More!</p>
         <img class="arrow-bottom" src="~/assets/img/home/arrow-bottom.svg" alt="" v-parallax="0.1" />
       </section>
@@ -20,9 +20,9 @@
       </section>
 
       <section class="to-for-learner">
-        <img class="bg" src="~/assets/img/home/girl.svg" alt="株式会社カーバンクルの学生様向けサービス紹介へのリンク" />
+        <img class="bg" src="~/assets/img/home/girl.jpg" alt="株式会社カーバンクルの学生様向けサービス紹介へのリンク" />
         <router-link to="/learner" class="link-card" data-scroll v-parallax="0.1">
-          <img src="~/assets/img/home/to-for-learner.svg" alt="将来に悩み、成長のための環境を探している方に伝えたいことがあります。" />
+          <img src="~/assets/img/home/to-for-learner.svg" alt="いいものをつくることに情熱的であり、そしてそれが引き起こす社会の変化に心躍るあなたのための機会。" />
         </router-link>
       </section>
 
@@ -73,35 +73,39 @@ export default {
   components: {
     Footer,
   },
-  mounted () { this.$store.state.so() },
-  head () { return this.$store.state.getHead() },
+  mounted() {
+    this.$store.state.so()
+  },
+  head() {
+    return this.$store.state.getHead()
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
-.page{
+.page {
   background: pale($blue);
 }
-#home{
-  section{
+#home {
+  section {
     @include fullpage;
   }
 
-  section:nth-of-type(1){
+  section:nth-of-type(1) {
     background: $blue;
 
-    img.here{
+    img.here {
       padding-top: 7%;
       width: 96%;
       margin-left: auto;
     }
-    img.co-name{
+    img.co-name {
       padding: 9% 0 2%;
       width: 90%;
       z-index: 1;
     }
-    .under-bar{
+    .under-bar {
       width: 86%;
       $height: 8px;
       height: $height;
@@ -109,36 +113,36 @@ export default {
       border-radius: $height;
       opacity: 0.2;
     }
-    .heading{
+    .heading {
       padding-top: 5%;
       padding-bottom: 15%;
       font-size: 0.95rem;
       font-weight: 300;
     }
-    .more{
+    .more {
       padding-bottom: 10%;
       font-size: 1.1rem;
       font-weight: 900;
       opacity: 0.6;
     }
-    img.arrow-bottom{
+    img.arrow-bottom {
       width: 0.75rem;
       opacity: 0.3;
     }
 
-    @include md{
+    @include md {
       padding-right: 50vw;
       flex-flow: column;
-      img.here{
+      img.here {
         position: absolute;
         right: 0;
         bottom: 0;
         width: 60%;
       }
-      .heading{
+      .heading {
         font-size: 1.3rem;
       }
-      .more{
+      .more {
         padding-top: 10%;
         padding-bottom: 5%;
       }
@@ -146,10 +150,10 @@ export default {
   }
 
   // no.2
-  section.to-service{
+  section.to-service {
     background: $red;
     overflow: hidden;
-    .bg{
+    .bg {
       position: absolute;
       width: auto;
       height: 100%;
@@ -157,13 +161,13 @@ export default {
       opacity: 0.4;
       z-index: 1;
     }
-    .link-card{
+    .link-card {
       z-index: 2;
       width: 92%;
       padding-bottom: 30%;
     }
-    @include md{
-      .link-card{
+    @include md {
+      .link-card {
         width: 40%;
         padding: 0;
         margin-left: auto;
@@ -173,23 +177,23 @@ export default {
   }
 
   // no.3
-  section.to-for-learner{
+  section.to-for-learner {
     background: $grey-1;
     overflow: hidden;
-    .bg{
+    .bg {
       position: absolute;
       top: -3px;
       width: auto;
       height: 70%;
       z-index: 1;
     }
-    .link-card{
+    .link-card {
       z-index: 2;
       width: 92%;
       padding-top: 60%;
     }
-    @include md{
-      .bg{
+    @include md {
+      .bg {
         position: absolute;
         width: auto;
         height: 100%;
@@ -197,7 +201,7 @@ export default {
         transform: scale(1.2);
         z-index: 1;
       }
-      .link-card{
+      .link-card {
         width: 40%;
         padding: 0;
         margin-right: auto;
@@ -206,61 +210,59 @@ export default {
     }
   }
   // no.4
-  section.magazine{
-    background: #BCF0FF;
-    .figure{
+  section.magazine {
+    background: #bcf0ff;
+    .figure {
       width: 74%;
-      @include  md{
+      @include md {
         width: 50%;
         padding: 9%;
       }
     }
   }
   // no.5
-  section.works{
+  section.works {
     background: $grey-5;
-    .figure{
+    .figure {
       width: 50%;
-      @include  md{
+      @include md {
         width: 47%;
         padding: 13%;
       }
     }
   }
   // no.6
-  section.event{
+  section.event {
     background: $pink;
-    .figure{
+    .figure {
       width: 55%;
-      @include  md{
+      @include md {
         width: 47%;
         padding: 12%;
       }
     }
   }
   // no.7
-  section.company{
+  section.company {
     background: $violet-dark;
-    .figure{
+    .figure {
       width: 53%;
-      @include  md{
+      @include md {
         width: 47%;
         padding: 12%;
       }
     }
   }
   // no.8
-  section.contact{
-    background: #9DFECA;
-    .figure{
+  section.contact {
+    background: #9dfeca;
+    .figure {
       width: 66%;
-      @include  md{
+      @include md {
         width: 47%;
         padding: 12%;
       }
     }
   }
-
 }
-
 </style>

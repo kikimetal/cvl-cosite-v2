@@ -28,7 +28,6 @@
       }
 
       .cls-6 {
-        font-size: 32px;
         font-weight: 400;
       }
 
@@ -45,17 +44,21 @@
     </g>
     <g id="グループ化_2836" data-name="グループ化 2836" transform="translate(49.403 191.677)">
       <rect id="長方形_1357" data-name="長方形 1357" class="cls-3" width="418.006" height="102.002" transform="translate(0.005 2.499)"/>
-      <text id="いいものをつくることに情熱的であり_そしてそれが引き起こす社会の変化に心躍るあなたのための機会_" data-name="いいものをつくることに情熱的であり、そしてそれが引き起こす社会の変化に心躍るあなたのための機会。" class="cls-4"><tspan x="0" y="18">いいものをつくることに情熱的であり、そ</tspan><tspan x="0" y="54">してそれが引き起こす社会の変化に心躍る</tspan><tspan x="0" y="90">あなたのための機会。</tspan></text>
+      <text id="将来に悩み_成長のための環境を探してい" data-name="将来に悩み、成長のための環境を探してい" class="cls-4" transform="translate(0 18)"><tspan x="0" y="0">将来に悩み、成長のための環境を探してい</tspan></text>
+      <text id="る" class="cls-4" transform="translate(0 56.505)"><tspan x="0" y="0">る</tspan></text>
+      <text id="方に伝えたいことがあります_" data-name="方に伝えたいことがあります。" class="cls-4" transform="translate(22.003 56.505)"><tspan x="0" y="0">方に伝えたいことがあります。</tspan></text>
+      <text id="_" data-name="。" class="cls-4" transform="translate(319.441 56.505)"><tspan x="0" y="0">。</tspan></text>
+      <rect id="長方形_1358" data-name="長方形 1358" class="cls-1" width="42.454" height="42.454" transform="translate(314.637 41.773)"/>
     </g>
-    <g id="グループ化_2837" data-name="グループ化 2837" transform="translate(49.403 46.149)">
+    <g id="グループ化_2837" data-name="グループ化 2837" transform="translate(49.403 44.149)">
       <rect id="長方形_1359" data-name="長方形 1359" class="cls-3" width="418.006" height="38.996" transform="translate(0.005 33.13)"/>
-      <text id="For_learner_挑戦先を探している若者へ" data-name="For learner
-挑戦先を探している若者へ" class="cls-5" transform="translate(0 39)"><tspan x="0" y="0">For learner</tspan><tspan class="cls-6"><tspan x="0" y="45">挑戦先を探している若者へ</tspan></tspan></text>
+      <text id="For_learner_デザインがしたい若者へ" data-name="For learner
+デザインがしたい若者へ" class="cls-5" transform="translate(0 39)"><tspan x="0" y="0">For learner</tspan><tspan class="cls-6"><tspan x="0" y="45">デザインがしたい若者へ</tspan></tspan></text>
     </g>
     <path id="パス_1223" data-name="パス 1223" class="cls-2" d="M590.072,3152.187H512.2a7.5,7.5,0,1,1,0-15h77.857a15.5,15.5,0,0,0,0-31H483.082a15.5,15.5,0,1,0,0,31h10.51a7.5,7.5,0,1,1,0,15h-10.5a30.494,30.494,0,0,1,0-60.987H590.072a30.494,30.494,0,0,1,0,60.987Z" transform="translate(-402.634 -2746.765)"/>
     <path id="パス_1224" data-name="パス 1224" class="cls-2" d="M1182.2,3305.888l-11.8-7.687v15.386Z" transform="translate(-1040.345 -2930.669)"/>
     <rect id="長方形_1360" data-name="長方形 1360" class="cls-3" width="417.906" height="17.997" transform="translate(49.453 308.943)"/>
-    <text id="所要時間_分" data-name="所要時間：５分" class="cls-7" transform="translate(52.461 322.939)"><tspan x="0" y="0">所要時間：５分</tspan></text>
-    <path id="パス_1225" data-name="パス 1225" class="cls-2" d="M855.5,1386H458.6a10.5,10.5,0,0,1-10.5-10.5h0a10.5,10.5,0,0,1,10.5-10.5H855.507a10.5,10.5,0,0,1,10.5,10.5h0A10.512,10.512,0,0,1,855.5,1386Z" transform="translate(-398.636 -1214.167)"/>
+    <text id="所要時間_分" data-name="所要時間：５分" class="cls-7" transform="translate(49.461 322.939)"><tspan x="0" y="0">所要時間：５分</tspan></text>
+    <path id="パス_1225" data-name="パス 1225" class="cls-2" d="M855.5,1386H458.6a10.5,10.5,0,0,1-10.5-10.5h0a10.5,10.5,0,0,1,10.5-10.5H855.507a10.5,10.5,0,0,1,10.5,10.5h0A10.512,10.512,0,0,1,855.5,1386Z" transform="translate(-398.636 -1213.167)"/>
   </g>
 </svg>
