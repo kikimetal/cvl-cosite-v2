@@ -102,7 +102,7 @@ export default {
   margin-top: 49px;
   width: 100%;
   height: 90vw;
-  background: url(~assets/img/home/girl.jpg);
+  background: url(~assets/img/home/girl.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,7 +144,7 @@ section.top {
         rgba(255, 255, 255, 0.6),
         rgba(255, 255, 255, 0.6)
       ),
-      url(~assets/img/home/girl.jpg);
+      url(~assets/img/home/girl.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%;
